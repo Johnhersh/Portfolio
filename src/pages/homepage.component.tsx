@@ -11,9 +11,17 @@ function HomePage() {
   return (
     <div className="homepageContainer">
       <TopBar />
-      <PortfolioItem bgcolor={light} />
-      <PortfolioItem bgcolor={dark} />
-      <PortfolioItem bgcolor={light} />
+      <main style={{ marginTop: "100px" }}>
+        <PortfolioItem bgcolor={light} />
+        <PortfolioItem bgcolor={dark} />
+        <PortfolioItem bgcolor={light} />
+        <PortfolioItem bgcolor={dark} />
+        <PortfolioItem bgcolor={light} />
+        <PortfolioItem bgcolor={dark} />
+        <PortfolioItem bgcolor={light} />
+        <PortfolioItem bgcolor={dark} />
+        <PortfolioItem bgcolor={light} />
+      </main>
     </div>
   );
 }
