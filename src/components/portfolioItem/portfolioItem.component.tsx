@@ -1,7 +1,5 @@
 import React from "react";
 
-import logo from "../../Assets/Phone_Firepointe.png";
-
 import "./portfolioItem.styles.scss";
 
 function PortfolioItem(props: any) {
@@ -16,7 +14,7 @@ function PortfolioItem(props: any) {
       </div>
       <div className="portfolioSpacer" />
       <div className="imageContainer">
-        <img src={logo} className="contentImage" alt="screenshot" />
+        <img src={props.image} className="contentImage" alt="screenshot" />
       </div>
     </div>
   );
