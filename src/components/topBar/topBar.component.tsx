@@ -1,6 +1,6 @@
 import React from "react";
 
-import NameTitle from "../../Assets/Name.jpg";
+import NameTitle from "../../Assets/Name.png";
 
 import "./topBar.styles.scss";
 

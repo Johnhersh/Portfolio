@@ -9,8 +9,16 @@ function PortfolioItem(props: any) {
       className="portfolioItemContainer"
     >
       <div className="descriptionContainer">
-        <p>portfolio item #1</p>
-        <p>portfolio item #1</p>
+        <h1>Description</h1>
+        <p>{props.description}</p>
+        <h2>Tech used</h2>
+        <div className="iconsContainer">
+          {props.icons.map((item: any, index: any) => (
+            <img key={index} src={item} />
+          ))}
+        </div>
+        <h2>Github Link</h2>
+        <a href={props.githubLink}>Firepointe Github</a>
       </div>
       <div className="portfolioSpacer" />
       <div className="imageContainer">
