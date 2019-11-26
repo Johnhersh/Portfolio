@@ -1,10 +1,12 @@
+$responsive-width: 1000px;
+
 .portfolioItemContainer {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
 
-  @media screen and (max-width: 700px) {
+  @media screen and (max-width: $responsive-width) {
     flex-direction: column;
     flex-direction: column-reverse;
   }
@@ -13,9 +15,8 @@
 .portfolioSpacer {
   flex: 2;
   height: 100px;
-  //background-color: green;
 
-  @media screen and (max-width: 700px) {
+  @media screen and (max-width: $responsive-width) {
     height: 0px;
     flex: 0;
   }
@@ -30,8 +31,7 @@
   width: 400px;
   min-width: 400px;
   line-height: 1.6;
-  //background-color: blue;
-  @media screen and (max-width: 700px) {
+  @media screen and (max-width: $responsive-width) {
     flex: 1;
     min-width: auto;
     width: auto;
@@ -45,7 +45,7 @@
   min-width: 200px;
   padding: 1rem 0;
   //background-color: blue;
-  @media screen and (max-width: 700px) {
+  @media screen and (max-width: $responsive-width) {
     height: auto;
     width: 100%;
     flex: 0;
@@ -63,5 +63,6 @@
 
   img {
     height: 7rem;
+    margin-right: 1rem;
   }
 }

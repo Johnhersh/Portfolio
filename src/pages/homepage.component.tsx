@@ -34,23 +34,6 @@ function HomePage() {
           icons={[]}
         />
         <PortfolioItem bgcolor={dark} image={screenshotFirepointe} icons={[]} />
-        <PortfolioItem
-          bgcolor={light}
-          image={screenshotFirepointe}
-          icons={[]}
-        />
-        <PortfolioItem bgcolor={dark} image={screenshotFirepointe} icons={[]} />
-        <PortfolioItem
-          bgcolor={light}
-          image={screenshotFirepointe}
-          icons={[]}
-        />
-        <PortfolioItem bgcolor={dark} image={screenshotFirepointe} icons={[]} />
-        <PortfolioItem
-          bgcolor={light}
-          image={screenshotFirepointe}
-          icons={[]}
-        />
       </main>
     </div>
   );
