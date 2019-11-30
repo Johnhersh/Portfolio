@@ -20,10 +20,7 @@ function PortfolioItem(props: any) {
         <h2>Github Link</h2>
         <a href={props.githubLink}>Firepointe Github</a>
       </div>
-      <div className="portfolioSpacer" />
-      <div className="imageContainer">
-        <img src={props.image} className="contentImage" alt="screenshot" />
-      </div>
+      <div className="portfolioChildrenContainer">{props.children}</div>
     </div>
   );
 }
