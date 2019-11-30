@@ -10,7 +10,7 @@ function TopBar(props: any) {
       <div className="nameContainer">
         <img src={NameTitle} className="NameImage" alt="nameTitle" />
       </div>
-      <div className="topSpacer" />
+      {/* <div className="topSpacer" /> */}
       <div className="topbarLinks">
         <ul>
           <li>

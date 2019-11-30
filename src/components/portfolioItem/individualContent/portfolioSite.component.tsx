@@ -10,10 +10,10 @@ function PortfolioSite() {
     <div className="portfolioSiteContainer">
       <Vimeo
         video="375836140"
-        // width="348"
-        // height="750"
+        width="348"
+        height="750"
         // width="100%"
-        height="100%"
+        // height="100%"
         className="portfolioVideo"
         frameBorder="0"
         responsive
