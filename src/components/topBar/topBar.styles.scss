@@ -20,7 +20,11 @@ $responsive-width-topbar: 700px;
 }
 
 .nameContainer {
-  // padding: 0 4.5rem;
+  padding-left: 3.5rem;
+
+  @media screen and (max-width: 700px) {
+    padding: 0;
+  }
 }
 
 .NameImage {
