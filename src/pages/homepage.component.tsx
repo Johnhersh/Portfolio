@@ -12,7 +12,7 @@ import rnLogo from "../Assets/Logos/reactnative.png";
 import dotnetLogo from "../Assets/Logos/dotnet.png";
 
 function HomePage() {
-  const topBarSize = "150px";
+  const topBarSize = "125px";
 
   const light = "#e5e5e5";
   const dark = "#cccccc";
@@ -33,7 +33,14 @@ function HomePage() {
         >
           <PortfolioSite />
         </PortfolioItem>
-        <PortfolioItem bgcolor={dark} image={laptopPortfolio} icons={[]} />
+        <PortfolioItem
+          bgcolor={dark}
+          description={
+            "This website. Done as a project to learn React and Sass."
+          }
+          image={laptopPortfolio}
+          icons={[]}
+        />
         <PortfolioItem bgcolor={light} image={""} icons={[]} />
         <PortfolioItem bgcolor={dark} image={""} icons={[]} />
       </main>
