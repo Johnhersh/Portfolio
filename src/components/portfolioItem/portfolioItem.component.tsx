@@ -18,7 +18,9 @@ function PortfolioItem(props: any) {
           ))}
         </div>
         <h2>Github Link</h2>
-        <a href={props.githubLink}>Firepointe Github</a>
+        <a href={props.githubLink} target="_blank">
+          Github Link
+        </a>
       </div>
       <div className="portfolioChildrenContainer">{props.children}</div>
     </div>

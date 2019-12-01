@@ -1,0 +1,55 @@
+@import "../../../pages/homepage.styles";
+
+.firepointeContainer {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+
+  width: 100%;
+  height: auto;
+
+  @media screen and (max-width: $responsive-width) {
+    flex-direction: column;
+    flex-direction: column-reverse;
+  }
+}
+
+.firepointeVideo {
+  flex: 0;
+
+  max-height: 750px;
+  min-height: 450px;
+  max-width: 450px;
+  min-width: 350px;
+
+  width: 100%;
+  height: auto;
+
+  border-radius: 25px;
+  overflow: hidden;
+  z-index: 1; // To make sure the rounded corners hide the video once it starts playing
+
+  background-color: darkseagreen;
+
+  @media screen and (max-width: $responsive-width) {
+    flex: 1;
+
+    height: auto;
+    width: 348px;
+  }
+}
+
+.firepointeImage {
+  flex: 0;
+}
+
+.firepointeImage {
+  margin-top: 2rem;
+
+  @media screen and (max-width: $responsive-width) {
+    height: auto;
+    width: 100%;
+  }
+}
