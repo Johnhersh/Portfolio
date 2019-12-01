@@ -20,7 +20,9 @@ function HomePage() {
   return (
     <div className="homepageContainer">
       <TopBar size={topBarSize} />
-      <main style={{ marginTop: topBarSize }}>
+      <main
+        style={{ marginTop: topBarSize, flex: 1, backgroundColor: "black" }}
+      >
         <PortfolioItem
           bgcolor={light}
           description={

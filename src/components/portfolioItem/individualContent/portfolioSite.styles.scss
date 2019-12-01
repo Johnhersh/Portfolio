@@ -28,9 +28,11 @@
   width: 100%;
   height: auto;
 
-  border-radius: 20px;
+  border-radius: 25px;
   overflow: hidden;
   z-index: 1; // To make sure the rounded corners hide the video once it starts playing
+
+  background-color: darkseagreen;
 
   @media screen and (max-width: $responsive-width) {
     flex: 1;
@@ -38,13 +40,20 @@
     height: auto;
     width: 348px;
   }
-
-  iframe {
-    height: 100px;
-    width: 100px;
-  }
 }
 
 .portfolioImage {
   flex: 0;
+}
+
+.contentImage {
+  // width: auto;
+  // height: 500px;
+  // height: auto;
+  // width: 100%;
+
+  @media screen and (max-width: $responsive-width) {
+    height: auto;
+    width: 100%;
+  }
 }
