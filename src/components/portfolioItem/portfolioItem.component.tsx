@@ -25,7 +25,7 @@ function PortfolioItem(props: any) {
           </a>
         </div>
       </Fade>
-      <Fade>
+      <Fade right>
         <div className="portfolioChildrenContainer">{props.children}</div>
       </Fade>
     </div>
