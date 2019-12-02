@@ -46,9 +46,7 @@ function HomePage() {
         >
           <FirePointe />
         </PortfolioItem>
-
         <PortfolioItem bgcolor={light} image={""} icons={[]} />
-
         <PortfolioItem bgcolor={dark} image={""} icons={[]} />
       </main>
     </div>
