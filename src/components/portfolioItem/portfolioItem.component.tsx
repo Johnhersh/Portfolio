@@ -16,11 +16,11 @@ function PortfolioItem(props: any) {
           <h2>Tech used</h2>
           <div className="iconsContainer">
             {props.icons.map((item: any, index: any) => (
-              <img key={index} src={item} />
+              <img key={index} src={item} alt="icon" />
             ))}
           </div>
           <h2>Github Link</h2>
-          <a href={props.githubLink} target="_blank">
+          <a href={props.githubLink} target="_blank" rel="noopener noreferrer">
             Github Link
           </a>
         </div>
