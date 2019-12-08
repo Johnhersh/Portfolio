@@ -1,16 +1,17 @@
 import React from "react";
-
-import NameTitle from "../../Assets/Name.png";
+import Switch from "react-switch";
 
 import "./topBar.styles.scss";
 
 function TopBar(props: any) {
+  const [bIsChecked, setChecked] = React.useState(false);
+
   return (
     <div className="topBarContainer" style={{ height: props.size }}>
       <div className="nameContainer">
-        <img src={NameTitle} className="NameImage" alt="nameTitle" />
+        <h1>JOHN HERSHBERG</h1>
+        <h2>Front End Web Developer</h2>
       </div>
-      {/* <div className="topSpacer" /> */}
       <div className="topbarLinks">
         <ul>
           <li>
@@ -23,6 +24,17 @@ function TopBar(props: any) {
             <a href="/">Resume</a>
           </li>
         </ul>
+        <Switch
+          onChange={(checked, event, id) => {
+            setChecked(checked);
+            props.changeTheme();
+          }}
+          checked={bIsChecked}
+          onColor="#545259"
+          offColor="000000"
+          uncheckedIcon={false}
+          checkedIcon={false}
+        />
       </div>
     </div>
   );

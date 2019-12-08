@@ -6,11 +6,11 @@ import "./portfolioItem.styles.scss";
 function PortfolioItem(props: any) {
   return (
     <div
-      style={{ backgroundColor: props.bgcolor }}
-      className="portfolioItemContainer"
+      // style={{ backgroundColor: props.bgcolor }}
+      className={"portfolioItemContainer " + props.bgcolor}
     >
       <Fade left>
-        <div className="descriptionContainer">
+        <div className={"descriptionContainer"}>
           <h1>Description</h1>
           <p>{props.description}</p>
           <h2>Tech used</h2>
@@ -25,7 +25,7 @@ function PortfolioItem(props: any) {
           </a>
         </div>
       </Fade>
-      <Fade right>
+      <Fade>
         <div className="portfolioChildrenContainer">{props.children}</div>
       </Fade>
     </div>

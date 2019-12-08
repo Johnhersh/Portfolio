@@ -5,7 +5,7 @@ $responsive-width-topbar: 700px;
   position: fixed;
   width: 100%;
   flex-direction: row;
-  background-color: white;
+  background-color: var(--color-topbar);
   align-items: center;
   box-shadow: 0 3px 7px rgba(0, 0, 0, 0.2);
   z-index: 10;
@@ -20,7 +20,19 @@ $responsive-width-topbar: 700px;
 }
 
 .nameContainer {
+  color: var(--color-txt);
+  font-family: "Abel", Helvetica, sans-serif;
   padding-left: 3.5rem;
+
+  h1 {
+    font-size: 2rem;
+    margin: 0;
+  }
+
+  h2 {
+    font-size: 1.45rem;
+    margin: 0;
+  }
 
   @media screen and (max-width: 700px) {
     padding: 0;
@@ -60,7 +72,7 @@ $responsive-width-topbar: 700px;
   }
 
   a {
-    color: black;
+    color: var(--color-txt);
     text-decoration: none;
     transition: color 0.2s ease-out;
 

@@ -13,20 +13,20 @@ import sassLogo from "../Assets/Logos/sass.png";
 import typescriptLogo from "../Assets/Logos/typescript.png";
 import dotnetLogo from "../Assets/Logos/dotnet.png";
 
-function HomePage() {
+function HomePage(props: any) {
   const topBarSize = "125px";
 
-  const light = "#e5e5e5";
-  const dark = "#cccccc";
+  // const light = "#e5e5e5";
+  // const dark = "#cccccc";
 
   return (
     <div className="homepageContainer">
-      <TopBar size={topBarSize} />
+      <TopBar size={topBarSize} changeTheme={props.changeTheme} />
       <main
         style={{ marginTop: topBarSize, flex: 1, backgroundColor: "black" }}
       >
         <PortfolioItem
-          bgcolor={light}
+          bgcolor={"itemLight"}
           description={
             "This website. Done as a project to learn React and Sass."
           }
@@ -37,7 +37,7 @@ function HomePage() {
         </PortfolioItem>
 
         <PortfolioItem
-          bgcolor={dark}
+          bgcolor={"itemDark"}
           description={
             "Firepointe is an app mockup done for a local church. It congregates their posts from various social media outlets like Youtube and Facebook and shows them in a feed. There is also a donation page allowing people to give directly from the app. The app was made in React Native, with the backend done in dotnet for the user management."
           }
@@ -46,8 +46,8 @@ function HomePage() {
         >
           <FirePointe />
         </PortfolioItem>
-        <PortfolioItem bgcolor={light} image={""} icons={[]} />
-        <PortfolioItem bgcolor={dark} image={""} icons={[]} />
+        <PortfolioItem bgcolor={"itemLight"} image={""} icons={[]} />
+        <PortfolioItem bgcolor={"itemDark"} image={""} icons={[]} />
       </main>
     </div>
   );

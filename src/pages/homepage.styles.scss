@@ -6,3 +6,7 @@ $responsive-width: 1340px; // This gets imported from the item-specific scss fil
   flex-direction: column;
   width: 100%;
 }
+
+.darkModeText {
+  color: white;
+}

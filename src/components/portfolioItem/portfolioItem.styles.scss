@@ -10,6 +10,14 @@
     flex-direction: column;
     flex-direction: column-reverse;
   }
+
+  &.itemLight {
+    background: var(--color-bg-light);
+  }
+
+  &.itemDark {
+    background: var(--color-bg-dark);
+  }
 }
 
 .descriptionContainer {
@@ -21,6 +29,7 @@
   width: 400px;
   min-width: 400px;
   line-height: 1.6;
+  color: var(--color-txt);
   @media screen and (max-width: $responsive-width) {
     flex: 1;
     min-width: auto;
