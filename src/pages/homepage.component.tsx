@@ -29,7 +29,6 @@ function HomePage(props: any) {
             "This website. Done as a project to learn React and Sass."
           }
           githubLink={"https://github.com/Johnhersh/Portfolio"}
-          // icons={[reactjsLogo, sassLogo, typescriptLogo]}
           icons={[reactSVG, sassSVG, typescriptSVG]}
         >
           <PortfolioSite />
