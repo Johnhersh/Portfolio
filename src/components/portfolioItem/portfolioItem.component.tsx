@@ -5,10 +5,7 @@ import "./portfolioItem.styles.scss";
 
 function PortfolioItem(props: any) {
   return (
-    <div
-      // style={{ backgroundColor: props.bgcolor }}
-      className={"portfolioItemContainer " + props.bgcolor}
-    >
+    <div className={"portfolioItemContainer " + props.bgcolor}>
       <Fade left>
         <div className={"descriptionContainer"}>
           <h1>Description</h1>

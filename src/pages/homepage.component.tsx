@@ -17,9 +17,6 @@ import FirePointe from "../components/portfolioItem/individualContent/firePointe
 function HomePage(props: any) {
   const topBarSize = "125px";
 
-  // const light = "#e5e5e5";
-  // const dark = "#cccccc";
-
   return (
     <div className="homepageContainer">
       <TopBar size={topBarSize} changeTheme={props.changeTheme} />
@@ -33,7 +30,7 @@ function HomePage(props: any) {
           }
           githubLink={"https://github.com/Johnhersh/Portfolio"}
           // icons={[reactjsLogo, sassLogo, typescriptLogo]}
-          icons={[sassSVG, reactSVG, typescriptSVG]}
+          icons={[reactSVG, sassSVG, typescriptSVG]}
         >
           <PortfolioSite />
         </PortfolioItem>
