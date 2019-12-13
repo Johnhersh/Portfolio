@@ -61,7 +61,8 @@
     width: 75 px;
     height: 75 px;
     transition: all 0.2s ease-out;
-    fill: #000000;
+    // fill: #000000;
+    fill: var(--color-txt);
 
     &:hover,
     &:active {
@@ -91,16 +92,16 @@
 
     // Style for the Dotnet icon when it's idle
     .dotNet-1 {
-      fill: #000000;
+      fill: var(--color-txt);
     }
     .dotNet-2 {
       opacity: 0.5;
     }
     .dotNet-3 {
-      fill: #fff;
+      fill: var(--color-bg-light);
     }
     .dotNet-4 {
-      fill: #f2f2f2;
+      fill: var(--color-bg-light);
     }
   }
 }
