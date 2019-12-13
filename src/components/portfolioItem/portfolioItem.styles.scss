@@ -55,10 +55,53 @@
 .iconsContainer {
   display: flex;
   align-items: row;
+  align-items: center;
 
-  img {
-    height: 4rem;
-    margin-right: 1rem;
+  svg {
+    width: 75 px;
+    height: 75 px;
+    transition: all 0.2s ease-out;
+    fill: #000000;
+
+    &:hover,
+    &:active {
+      transition: all 0.1s ease-out;
+      transform: scale(1.2, 1.2);
+
+      .react_path {
+        fill: #28a9f3;
+      }
+      .sass_path {
+        fill: #ef72f3;
+      }
+      .typescript_path {
+        margin-top: 5px;
+        fill: #2f44bf;
+      }
+      .dotNet-1 {
+        fill: #5c2d91;
+      }
+      .dotNet-3 {
+        fill: #fff;
+      }
+      .dotNet-4 {
+        fill: #f2f2f2;
+      }
+    }
+
+    // Style for the Dotnet icon when it's idle
+    .dotNet-1 {
+      fill: #000000;
+    }
+    .dotNet-2 {
+      opacity: 0.5;
+    }
+    .dotNet-3 {
+      fill: #fff;
+    }
+    .dotNet-4 {
+      fill: #f2f2f2;
+    }
   }
 }
 

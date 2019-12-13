@@ -14,11 +14,7 @@ function PortfolioItem(props: any) {
           <h1>Description</h1>
           <p>{props.description}</p>
           <h2>Tech used</h2>
-          <div className="iconsContainer">
-            {props.icons.map((item: any, index: any) => (
-              <img key={index} src={item} alt="icon" />
-            ))}
-          </div>
+          <div className="iconsContainer">{props.icons}</div>
           <h2>Github Link</h2>
           <a href={props.githubLink} target="_blank" rel="noopener noreferrer">
             Github Link
