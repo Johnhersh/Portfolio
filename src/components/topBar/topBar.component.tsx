@@ -1,13 +1,10 @@
 import React from "react";
-import { createBrowserHistory } from "history";
 import Switch from "react-switch";
 
 import "./topBar.styles.scss";
 
 function TopBar(props: any) {
   const [bIsChecked, setChecked] = React.useState(false);
-  const history = createBrowserHistory();
-  const location = history.location;
 
   return (
     <div className="topBarContainer" style={{ height: props.size }}>
