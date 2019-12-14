@@ -1,10 +1,14 @@
 import React from "react";
+import { Link } from "react-router-dom";
+import { createBrowserHistory } from "history";
 import Switch from "react-switch";
 
 import "./topBar.styles.scss";
 
 function TopBar(props: any) {
   const [bIsChecked, setChecked] = React.useState(false);
+  const history = createBrowserHistory();
+  const location = history.location;
 
   return (
     <div className="topBarContainer" style={{ height: props.size }}>
@@ -21,7 +25,26 @@ function TopBar(props: any) {
             <a href="/">Email</a>
           </li>
           <li>
-            <a href="/">Resume</a>
+            {/* <Link to="/public/Hershberg_John_resume_webdev.pdf">Resume</Link> */}
+            {/* <a
+              href="/public/Hershberg_John_resume_webdev.pdf"
+              // download="Hershberg_John_resume_webdev.pdf"
+              download
+              target="_blank"
+            >
+              Resume
+            </a> */}
+            <a
+              href="#"
+              onClick={() => {
+                window.open(
+                  "/public/Hershberg_John_resume_webdev.pdf",
+                  "_parent"
+                );
+              }}
+            >
+              Resume
+            </a>
           </li>
         </ul>
         <Switch
