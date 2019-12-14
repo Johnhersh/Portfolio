@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import { createBrowserHistory } from "history";
 import Switch from "react-switch";
 
@@ -25,23 +24,12 @@ function TopBar(props: any) {
             <a href="/">Email</a>
           </li>
           <li>
-            {/* <Link to="/public/Hershberg_John_resume_webdev.pdf">Resume</Link> */}
-            {/* <a
-              href="/public/Hershberg_John_resume_webdev.pdf"
-              // download="Hershberg_John_resume_webdev.pdf"
+            <a
+              href={
+                process.env.PUBLIC_URL + "/Hershberg_John_resume_webdev.pdf"
+              }
               download
               target="_blank"
-            >
-              Resume
-            </a> */}
-            <a
-              href="#"
-              onClick={() => {
-                window.open(
-                  "/public/Hershberg_John_resume_webdev.pdf",
-                  "_parent"
-                );
-              }}
             >
               Resume
             </a>
