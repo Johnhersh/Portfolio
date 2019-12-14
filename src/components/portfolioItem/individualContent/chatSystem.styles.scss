@@ -1,0 +1,33 @@
+@import "../../../pages/homepage.styles";
+
+.chatSystemContainer {
+  flex: 1;
+
+  width: 100%;
+  height: auto;
+
+  @media screen and (max-width: $responsive-width) {
+    flex-direction: column;
+    flex-direction: column-reverse;
+  }
+}
+
+.chatImage {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+  @media screen and (max-width: $responsive-width) {
+    justify-content: center;
+  }
+}
+
+.chatContentImage {
+  max-width: 100%;
+  max-height: 100%;
+
+  @media screen and (max-width: $responsive-width) {
+    max-width: 80%;
+  }
+}

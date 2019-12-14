@@ -8,11 +8,14 @@ import {
   sassSVG,
   typescriptSVG,
   dotnetSVG,
-  reactNativeSVG
+  reactNativeSVG,
+  bootStrapSVG,
+  postgresSVG
 } from "./icons";
 
 import PortfolioSite from "../components/portfolioItem/individualContent/portfolioSite.component";
 import FirePointe from "../components/portfolioItem/individualContent/firePointe.component";
+import Chat from "../components/portfolioItem/individualContent/chatSystem.component";
 
 function HomePage(props: any) {
   const topBarSize = "125px";
@@ -44,8 +47,16 @@ function HomePage(props: any) {
         >
           <FirePointe />
         </PortfolioItem>
-        <PortfolioItem bgcolor={"itemLight"} image={""} icons={[]} />
-        <PortfolioItem bgcolor={"itemDark"} image={""} icons={[]} />
+        <PortfolioItem
+          bgcolor={"itemLight"}
+          description={
+            "A chat system done to study dotnet core. Backend done with dotnet, frontend with bootstrap. Using SignalR for the websocket chat, and Postgres for database. There is a companion phone app done with React Native that uses the same API."
+          }
+          githubLink={"https://github.com/Johnhersh/ChatApp"}
+          icons={[reactNativeSVG, dotnetSVG, postgresSVG, bootStrapSVG]}
+        >
+          <Chat />
+        </PortfolioItem>
       </main>
     </div>
   );
