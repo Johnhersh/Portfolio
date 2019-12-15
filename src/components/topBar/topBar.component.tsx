@@ -15,10 +15,7 @@ function TopBar(props: any) {
       <div className="topbarLinks">
         <ul>
           <li>
-            <a href="/">Github</a>
-          </li>
-          <li>
-            <a href="/">Email</a>
+            <a href="mailto:johnher@gmail.com">Email</a>
           </li>
           <li>
             <a
