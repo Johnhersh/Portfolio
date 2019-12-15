@@ -36,6 +36,16 @@
     width: auto;
     padding: 0.5rem 2rem;
   }
+
+  a {
+    color: #28a9f3;
+    &:visited {
+      color: #e75de0;
+    }
+    &:hover {
+      color: var(--color-txt);
+    }
+  }
 }
 
 .imageContainer {
