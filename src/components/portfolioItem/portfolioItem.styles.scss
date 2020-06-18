@@ -18,6 +18,7 @@
   &.itemDark {
     background: var(--color-bg-dark);
   }
+  transition: background 0.5s;
 }
 
 .descriptionContainer {
@@ -38,13 +39,14 @@
   }
 
   a {
-    color: #28a9f3;
+    color: var(--color-link);
     &:visited {
-      color: #e75de0;
+      color: var(--color-link-visited);
     }
     &:hover {
       color: var(--color-txt);
     }
+    transition: color 0.25s;
   }
 }
 

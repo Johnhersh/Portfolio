@@ -7,18 +7,22 @@ const lightTheme: any = {
   "--color-bg-dark": "#b3b3b3",
   "--color-bg-light": "#e5e5e5",
   "--color-txt": "#000000",
-  "--color-topbar": "#ffffff"
+  "--color-topbar": "#ffffff",
+  "--color-link": "#0d66be",
+  "--color-link-visited": "#b613ae",
 };
 const darkTheme: any = {
   "--color-bg-dark": "#26252a",
   "--color-bg-light": "#545259",
   "--color-txt": "#ffffff",
-  "--color-topbar": "#000000"
+  "--color-topbar": "#000000",
+  "--color-link": "#4ab9f0",
+  "--color-link-visited": "#f04fe8",
 };
 
 const applyTheme = (nextTheme: string) => {
   const theme = nextTheme === "dark" ? lightTheme : darkTheme;
-  Object.keys(theme).forEach(element => {
+  Object.keys(theme).forEach((element) => {
     const value = theme[element];
     document.documentElement.style.setProperty(element, value);
   });
