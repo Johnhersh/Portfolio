@@ -4,7 +4,7 @@ import "./chatSystem.styles.scss";
 
 import laptopChat from "../../../Assets/Laptop_Chat.png";
 
-function Chat() {
+export default function Chat() {
   return (
     <div className="chatSystemContainer">
       <div className="chatImage">
@@ -13,5 +13,3 @@ function Chat() {
     </div>
   );
 }
-
-export default Chat;

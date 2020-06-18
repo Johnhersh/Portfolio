@@ -10,9 +10,10 @@ import {
   dotnetSVG,
   reactNativeSVG,
   bootStrapSVG,
-  postgresSVG
+  postgresSVG,
 } from "./icons";
 
+import AlgoVis from "../components/portfolioItem/individualContent/algoVis.component";
 import PortfolioSite from "../components/portfolioItem/individualContent/portfolioSite.component";
 import FirePointe from "../components/portfolioItem/individualContent/firePointe.component";
 import Chat from "../components/portfolioItem/individualContent/chatSystem.component";
@@ -23,14 +24,21 @@ function HomePage(props: any) {
   return (
     <div className="homepageContainer">
       <TopBar size={topBarSize} changeTheme={props.changeTheme} />
-      <main
-        style={{ marginTop: topBarSize, flex: 1, backgroundColor: "black" }}
-      >
+      <main style={{ marginTop: topBarSize, flex: 1, backgroundColor: "black" }}>
+        <PortfolioItem
+          bgcolor={"itemDark"}
+          description={
+            "Made this project to learn more about algorithms and how they work. By trying to visualize common algorithms, I set out to understand them better."
+          }
+          githubLink={"https://github.com/Johnhersh/AlgoVis"}
+          icons={[reactSVG, sassSVG, typescriptSVG]}
+        >
+          <AlgoVis />
+        </PortfolioItem>
+
         <PortfolioItem
           bgcolor={"itemLight"}
-          description={
-            "This website. Done as a project to learn React and Sass."
-          }
+          description={"This website. Done as a project to learn React and Sass."}
           githubLink={"https://github.com/Johnhersh/Portfolio"}
           icons={[reactSVG, sassSVG, typescriptSVG]}
         >
@@ -47,6 +55,7 @@ function HomePage(props: any) {
         >
           <FirePointe />
         </PortfolioItem>
+
         <PortfolioItem
           bgcolor={"itemLight"}
           description={
