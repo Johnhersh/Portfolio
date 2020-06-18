@@ -12,6 +12,14 @@ function PortfolioItem(props: any) {
           <p>{props.description}</p>
           <h2>Tech used</h2>
           <div className="iconsContainer">{props.icons}</div>
+          {props.liveLink != null && (
+            <div>
+              <h2>Link to live version</h2>
+              <a href={props.liveLink} target="_blank" rel="noopener noreferrer">
+                Live Link
+              </a>
+            </div>
+          )}
           <h2>Github Link</h2>
           <a href={props.githubLink} target="_blank" rel="noopener noreferrer">
             Github Link

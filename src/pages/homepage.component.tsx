@@ -31,6 +31,7 @@ function HomePage(props: any) {
             "Made this project to learn more about algorithms and how they work. By trying to visualize common algorithms, I set out to understand them better."
           }
           githubLink={"https://github.com/Johnhersh/AlgoVis"}
+          liveLink={"https://algovis.johnher.com"}
           icons={[reactSVG, sassSVG, typescriptSVG]}
         >
           <AlgoVis />
