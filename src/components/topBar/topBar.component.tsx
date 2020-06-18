@@ -19,11 +19,10 @@ function TopBar(props: any) {
           </li>
           <li>
             <a
-              href={
-                process.env.PUBLIC_URL + "/Hershberg_John_resume_webdev.pdf"
-              }
+              href={process.env.PUBLIC_URL + "/Hershberg_John_resume_webdev.pdf"}
               download
               target="_blank"
+              rel="noopener noreferrer"
             >
               Resume
             </a>
