@@ -8,7 +8,7 @@ function PortfolioItem(props: any) {
     <div className={"portfolioItemContainer " + props.bgcolor}>
       <Fade left>
         <div className={"descriptionContainer"}>
-          <h1>Description</h1>
+          <h1>{props.title}</h1>
           <p>{props.description}</p>
           <h2>Tech used</h2>
           <div className="iconsContainer">{props.icons}</div>
