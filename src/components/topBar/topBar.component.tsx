@@ -15,6 +15,15 @@ function TopBar(props: any) {
       <div className="topbarLinks">
         <ul>
           <li>
+            <a
+              href="https://www.linkedin.com/in/john-hershberg/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              LinkedIn
+            </a>
+          </li>
+          <li>
             <a href="mailto:johnher@gmail.com">Email</a>
           </li>
           <li>
