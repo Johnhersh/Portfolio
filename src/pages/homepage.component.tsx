@@ -34,6 +34,7 @@ function HomePage(props: any) {
             "A currency converter app done in React Native. Purpose of this project was to learn Redux, use multiple APIs, and React-Native animations."
           }
           githubLink={"https://github.com/Johnhersh/CurrencyConverter"}
+          liveLink={{ link: "exp://exp.host/@johnhersh/currencyconverter", title: "Expo Link" }}
           icons={[reactNativeSVG, typescriptSVG, reduxSVG]}
         >
           <CurrencyCalc />
@@ -46,7 +47,7 @@ function HomePage(props: any) {
             "Made this project to learn more about algorithms and how they work. By trying to visualize common algorithms, I set out to understand them better."
           }
           githubLink={"https://github.com/Johnhersh/AlgoVis"}
-          liveLink={"https://algovis.johnher.com"}
+          liveLink={{ link: "https://algovis.johnher.com", title: "Algorithm Visualizer" }}
           icons={[reactSVG, sassSVG, typescriptSVG]}
         >
           <AlgoVis />
