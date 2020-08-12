@@ -1,36 +1,53 @@
-import React from "react";
+import React, { FunctionComponent } from "react";
 import Fade from "react-reveal/Fade.js";
 
 import "./portfolioItem.styles.scss";
 
-function PortfolioItem(props: any) {
+interface Props {
+  bgcolor: string;
+  title: string;
+  description: string;
+  icons: Array<JSX.Element>;
+  liveLink?: { link: string; title: string };
+  githubLink: string;
+}
+
+const PortfolioItem: FunctionComponent<Props> = ({
+  bgcolor,
+  title,
+  description,
+  icons,
+  liveLink,
+  githubLink,
+  children,
+}) => {
   return (
-    <div className={"portfolioItemContainer " + props.bgcolor}>
+    <div className={"portfolioItemContainer " + bgcolor}>
       <Fade left>
         <div className={"descriptionContainer"}>
-          <h1>{props.title}</h1>
-          <p>{props.description}</p>
+          <h1>{title}</h1>
+          <p>{description}</p>
           <h2>Tech used</h2>
-          <div className="iconsContainer">{props.icons}</div>
-          {props.liveLink != null && (
+          <div className="iconsContainer">{icons}</div>
+          {liveLink != null && (
             <div>
               <h2>Link to live version</h2>
-              <a href={props.liveLink} target="_blank" rel="noopener noreferrer">
-                Live Link
+              <a href={liveLink.link} target="_blank" rel="noopener noreferrer">
+                {liveLink.title}
               </a>
             </div>
           )}
           <h2>Github Link</h2>
-          <a href={props.githubLink} target="_blank" rel="noopener noreferrer">
+          <a href={githubLink} target="_blank" rel="noopener noreferrer">
             Github Link
           </a>
         </div>
       </Fade>
       <Fade>
-        <div className="portfolioChildrenContainer">{props.children}</div>
+        <div className="portfolioChildrenContainer">{children}</div>
       </Fade>
     </div>
   );
-}
+};
 
 export default PortfolioItem;
