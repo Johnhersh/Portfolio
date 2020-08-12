@@ -1,6 +1,6 @@
 @import "../../../pages/homepage.styles";
 
-.firepointeContainer {
+.currencyCalcContainer {
   flex: 1;
   display: flex;
   flex-direction: row;
@@ -17,7 +17,7 @@
   }
 }
 
-.firepointeVideo {
+.currencyConverterVideo {
   flex: 0;
 
   max-height: 750px;
@@ -42,7 +42,7 @@
   }
 }
 
-.firepointeImage {
+.currencyCalcImage {
   margin-top: 1rem;
 
   @media screen and (max-width: $responsive-width) {

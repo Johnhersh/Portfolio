@@ -11,12 +11,14 @@ import {
   reactNativeSVG,
   bootStrapSVG,
   postgresSVG,
+  reduxSVG,
 } from "./icons";
 
 import AlgoVis from "../components/portfolioItem/individualContent/algoVis.component";
 import PortfolioSite from "../components/portfolioItem/individualContent/portfolioSite.component";
 import FirePointe from "../components/portfolioItem/individualContent/firePointe.component";
 import Chat from "../components/portfolioItem/individualContent/chatSystem.component";
+import CurrencyCalc from "../components/portfolioItem/individualContent/currencyCalc.component";
 
 function HomePage(props: any) {
   const topBarSize = "125px";
@@ -25,6 +27,18 @@ function HomePage(props: any) {
     <div className="homepageContainer">
       <TopBar size={topBarSize} changeTheme={props.changeTheme} />
       <main style={{ marginTop: topBarSize, flex: 1, backgroundColor: "black" }}>
+        <PortfolioItem
+          bgcolor={"itemLight"}
+          title={"Currency Converter"}
+          description={
+            "A currency converter app done in React Native. Purpose of this project was to learn Redux, use multiple APIs, and React-Native animations."
+          }
+          githubLink={"https://github.com/Johnhersh/CurrencyConverter"}
+          icons={[reactNativeSVG, typescriptSVG, reduxSVG]}
+        >
+          <CurrencyCalc />
+        </PortfolioItem>
+
         <PortfolioItem
           bgcolor={"itemDark"}
           title={"Algorithm Visualizer"}
