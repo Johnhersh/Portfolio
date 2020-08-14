@@ -18,6 +18,8 @@ function CurrencyCalc() {
         showByline={false}
         controls={false}
         loop={true}
+        background={true}
+        autoplay={true}
       />
       <div className="currencyCalcImage">
         <img src={screenshotCurrency} className="currencyCalcImage" alt="screenshot" />

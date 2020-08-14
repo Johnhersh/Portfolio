@@ -18,13 +18,11 @@ function FirePointe() {
         showByline={false}
         controls={false}
         loop={true}
+        background={true}
+        autoplay={true}
       />
       <div className="firepointeImage">
-        <img
-          src={screenshotFirepointe}
-          className="firepointeImage"
-          alt="screenshot"
-        />
+        <img src={screenshotFirepointe} className="firepointeImage" alt="screenshot" />
       </div>
     </div>
   );
