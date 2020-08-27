@@ -12,6 +12,7 @@ import {
   bootStrapSVG,
   postgresSVG,
   reduxSVG,
+  threejsSVG,
 } from "./icons";
 
 import AlgoVis from "../components/portfolioItem/individualContent/algoVis.component";
@@ -19,6 +20,7 @@ import PortfolioSite from "../components/portfolioItem/individualContent/portfol
 import FirePointe from "../components/portfolioItem/individualContent/firePointe.component";
 import Chat from "../components/portfolioItem/individualContent/chatSystem.component";
 import CurrencyCalc from "../components/portfolioItem/individualContent/currencyCalc.component";
+import SpaceView from "../components/portfolioItem/individualContent/spaceView.component";
 
 function HomePage(props: any) {
   const topBarSize = "125px";
@@ -27,6 +29,19 @@ function HomePage(props: any) {
     <div className="homepageContainer">
       <TopBar size={topBarSize} changeTheme={props.changeTheme} />
       <main style={{ marginTop: topBarSize, flex: 1, backgroundColor: "black" }}>
+        <PortfolioItem
+          bgcolor={"itemDark"}
+          title={"Solar System Visualizer"}
+          description={
+            "A web app for viewing the solar system in 3D. Done with three.js for the purpose of studying web visualization technologies."
+          }
+          githubLink={"https://github.com/Johnhersh/SpaceView"}
+          liveLink={{ link: "https://spaceview.johnher.com", title: "Solar System Visualizer" }}
+          icons={[reactSVG, sassSVG, typescriptSVG, threejsSVG]}
+        >
+          <SpaceView />
+        </PortfolioItem>
+
         <PortfolioItem
           bgcolor={"itemLight"}
           title={"Currency Converter"}

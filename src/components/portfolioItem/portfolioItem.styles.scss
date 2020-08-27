@@ -73,7 +73,6 @@
     width: 75 px;
     height: 75 px;
     transition: all 0.2s ease-out;
-    // fill: #000000;
     fill: var(--color-txt);
 
     &:hover,
@@ -117,6 +116,9 @@
       }
       .reduxShape {
         fill: #905ae7;
+      }
+      .threejsFill {
+        fill: #28a9f3;
       }
     }
 
@@ -162,7 +164,6 @@
   flex: 1;
 
   @media screen and (max-width: $responsive-width) {
-    // height: 750px;
     height: auto;
   }
 }
