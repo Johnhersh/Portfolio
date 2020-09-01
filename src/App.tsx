@@ -4,12 +4,14 @@ import "./App.css";
 import HomePage from "./pages/homepage.component";
 
 const lightTheme: any = {
-  "--color-bg-dark": "#b3b3b3",
-  "--color-bg-light": "#e5e5e5",
-  "--color-txt": "#000000",
+  "--color-bg-dark": "#e9eaef",
+  "--color-bg-light": "#fbfcff",
+  "--color-txt": "#3f4253",
   "--color-topbar": "#ffffff",
   "--color-link": "#0d66be",
   "--color-link-visited": "#b613ae",
+  "--color-neu-shadow-dark": "#d7d7df",
+  "--color-neu-shadow-light": "#ffffff",
 };
 const darkTheme: any = {
   "--color-bg-dark": "#26252a",
@@ -38,7 +40,6 @@ const App: React.FC = () => {
 
   return (
     <div className="App">
-      {/* <h1>{currentTheme === "light" ? "Light theme" : "Dark theme"}</h1> */}
       <HomePage changeTheme={changeTheme} />
     </div>
   );

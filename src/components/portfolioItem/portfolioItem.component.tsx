@@ -5,7 +5,6 @@ import "./portfolioItem.styles.scss";
 import "./individualContent.styles.scss";
 
 interface Props {
-  bgcolor: string;
   title: string;
   description: string;
   icons: Array<JSX.Element>;
@@ -14,7 +13,6 @@ interface Props {
 }
 
 const PortfolioItem: FunctionComponent<Props> = ({
-  bgcolor,
   title,
   description,
   icons,
@@ -23,7 +21,7 @@ const PortfolioItem: FunctionComponent<Props> = ({
   children,
 }) => {
   return (
-    <div className={"portfolioItemContainer " + bgcolor}>
+    <div className={"portfolioItemContainer"}>
       <Fade left>
         <div className={"descriptionContainer"}>
           <h1>{title}</h1>

@@ -28,9 +28,8 @@ function HomePage(props: any) {
   return (
     <div className="homepageContainer">
       <TopBar size={topBarSize} changeTheme={props.changeTheme} />
-      <main style={{ marginTop: topBarSize, flex: 1, backgroundColor: "black" }}>
+      <main style={{ marginTop: topBarSize, flex: 1 }}>
         <PortfolioItem
-          bgcolor={"itemDark"}
           title={"Solar System Visualizer"}
           description={
             "A web app for viewing the solar system in 3D. Done with three.js for the purpose of studying web visualization technologies."
@@ -43,7 +42,6 @@ function HomePage(props: any) {
         </PortfolioItem>
 
         <PortfolioItem
-          bgcolor={"itemLight"}
           title={"Currency Converter"}
           description={
             "A currency converter app done in React Native. Purpose of this project was to learn Redux, use multiple APIs, and React-Native animations."
@@ -56,7 +54,6 @@ function HomePage(props: any) {
         </PortfolioItem>
 
         <PortfolioItem
-          bgcolor={"itemDark"}
           title={"Algorithm Visualizer"}
           description={
             "Made this project to learn more about algorithms and how they work. By trying to visualize common algorithms, I set out to understand them better."
@@ -69,7 +66,6 @@ function HomePage(props: any) {
         </PortfolioItem>
 
         <PortfolioItem
-          bgcolor={"itemLight"}
           title={"Portfolio Site"}
           description={"This website. Done as a project to learn React and Sass."}
           githubLink={"https://github.com/Johnhersh/Portfolio"}
@@ -79,7 +75,6 @@ function HomePage(props: any) {
         </PortfolioItem>
 
         <PortfolioItem
-          bgcolor={"itemDark"}
           title={"Firepointe"}
           description={
             "Firepointe is an app mockup done for a local church. It congregates their posts from various social media outlets like Youtube and Facebook and shows them in a feed. There is also a donation page allowing people to give directly from the app. The app was made in React Native, with the backend done in dotnet for the user management."
@@ -91,7 +86,6 @@ function HomePage(props: any) {
         </PortfolioItem>
 
         <PortfolioItem
-          bgcolor={"itemLight"}
           title={"Chat System"}
           description={
             "A chat system done to study dotnet core. Backend done with dotnet, frontend with bootstrap. Using SignalR for the websocket chat, and Postgres for database. There is a companion phone app done with React Native that uses the same API."

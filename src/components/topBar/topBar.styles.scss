@@ -7,7 +7,7 @@ $responsive-width-topbar: 700px;
   flex-direction: row;
   background-color: var(--color-topbar);
   align-items: center;
-  box-shadow: 0 3px 7px rgba(0, 0, 0, 0.2);
+  // box-shadow: 0 3px 7px rgba(0, 0, 0, 0.2);
   z-index: 10;
 
   @media screen and (max-width: 700px) {

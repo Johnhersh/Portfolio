@@ -1,8 +1,10 @@
 :root {
-  --color-bg-dark: #cccccc;
-  --color-bg-light: #e5e5e5;
-  --color-txt: #000000;
+  --color-bg-dark: #e9eaef;
+  --color-bg-light: #fbfcff;
+  --color-txt: #3f4253;
   --color-topbar: #ffffff;
   --color-link: #0d66be;
   --color-link-visited: #b613ae;
+  --color-neu-shadow-dark: #d7d7df;
+  --color-neu-shadow-light: #ffffff;
 }
