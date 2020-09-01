@@ -16,7 +16,6 @@
     "react-reveal": "^1.2.2",
     "react-scripts": "3.4.1",
     "react-switch": "^5.0.1",
-    "scroll-out": "^2.2.11",
     "typescript": "3.7.2"
   },
   "scripts": {
