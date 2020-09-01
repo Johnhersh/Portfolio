@@ -2,6 +2,7 @@ import React, { FunctionComponent } from "react";
 import Fade from "react-reveal/Fade.js";
 
 import "./portfolioItem.styles.scss";
+import "./individualContent.styles.scss";
 
 interface Props {
   bgcolor: string;

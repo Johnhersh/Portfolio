@@ -1,15 +1,13 @@
 import React from "react";
 
-import "./portfolioSite.styles.scss";
-
-import laptopPortfolio from "../../../Assets/Laptop_Portfolio.png";
+import ScreenshotPortfolio from "../../../Assets/Images_Neu/Portfolio.png";
+import ScreenshotPortfolioPhone from "../../../Assets/Images_Neu/Portfolio_Phone.png";
 
 function PortfolioSite() {
   return (
-    <div className="portfolioSiteContainer">
-      <div className="portfolioImage">
-        <img src={laptopPortfolio} className="contentImage" alt="screenshot" />
-      </div>
+    <div className="screenshotImageContainer">
+      <img src={ScreenshotPortfolioPhone} className="screenshotContentImage" alt="screenshot" />
+      <img src={ScreenshotPortfolio} className="screenshotContentImage" alt="screenshot" />
     </div>
   );
 }

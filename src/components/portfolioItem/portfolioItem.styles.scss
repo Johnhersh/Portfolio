@@ -5,6 +5,7 @@
   flex-direction: row;
   align-items: stretch;
   justify-content: center;
+  min-height: 40em;
 
   @media screen and (max-width: $responsive-width) {
     flex-direction: column;
@@ -162,6 +163,8 @@
 .portfolioChildrenContainer {
   display: flex;
   flex: 1;
+  align-items: center;
+  justify-content: center;
 
   @media screen and (max-width: $responsive-width) {
     height: auto;

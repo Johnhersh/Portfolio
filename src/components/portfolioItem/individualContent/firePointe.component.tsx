@@ -1,16 +1,14 @@
 import React from "react";
 import Vimeo from "@u-wave/react-vimeo";
 
-import "./firePointe.styles.scss";
-
-import screenshotFirepointe from "../../../Assets/Phone_Firepointe.png";
+import ScreenshotFirepointe from "../../../Assets/Images_Neu/Firepointe_Phone.png";
 
 function FirePointe() {
   return (
-    <div className="firepointeContainer">
+    <div className="screenshotImageContainer">
       <Vimeo
         video="375836140"
-        className="firepointeVideo"
+        className="vimeoVideo"
         start={3}
         responsive
         showPortrait={false}
@@ -21,9 +19,7 @@ function FirePointe() {
         background={true}
         autoplay={true}
       />
-      <div className="firepointeImage">
-        <img src={screenshotFirepointe} className="firepointeImage" alt="screenshot" />
-      </div>
+      <img src={ScreenshotFirepointe} className="screenshotContentImage" alt="screenshot" />
     </div>
   );
 }

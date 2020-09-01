@@ -1,15 +1,11 @@
 import React from "react";
 
-import "./chatSystem.styles.scss";
-
-import laptopChat from "../../../Assets/Laptop_Chat.png";
+import ScreenshotChat from "../../../Assets/Images_Neu/Chat.png";
 
 export default function Chat() {
   return (
-    <div className="chatSystemContainer">
-      <div className="chatImage">
-        <img src={laptopChat} className="chatContentImage" alt="screenshot" />
-      </div>
+    <div className="screenshotImageContainer">
+      <img src={ScreenshotChat} className="screenshotContentImage" alt="screenshot" />
     </div>
   );
 }

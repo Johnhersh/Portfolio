@@ -1,16 +1,14 @@
 import React from "react";
 import Vimeo from "@u-wave/react-vimeo";
 
-import "./currencyCalc.styles.scss";
-
-import screenshotCurrency from "../../../Assets/Phone_CurrencyCalc.png";
+import ScreenshotCurrency from "../../../Assets/Images_Neu/Currency_Phone.png";
 
 function CurrencyCalc() {
   return (
-    <div className="currencyCalcContainer">
+    <div className="screenshotImageContainer">
       <Vimeo
         video="447021693"
-        className="currencyConverterVideo"
+        className="vimeoVideo"
         start={0}
         responsive
         showPortrait={false}
@@ -21,9 +19,7 @@ function CurrencyCalc() {
         background={true}
         autoplay={true}
       />
-      <div className="currencyCalcImage">
-        <img src={screenshotCurrency} className="currencyCalcImage" alt="screenshot" />
-      </div>
+      <img src={ScreenshotCurrency} className="screenshotContentImage" alt="screenshot" />
     </div>
   );
 }
