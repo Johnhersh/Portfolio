@@ -1,7 +1,7 @@
 @import "../../pages/homepage.styles";
 $neu-radius: 32px;
 $neu-shadow: 10px;
-$neu-shadow-blur: 14px;
+$neu-shadow-blur: 24px;
 $neu-highlight: -7px;
 
 .screenshotImageContainer {
@@ -20,7 +20,7 @@ $neu-highlight: -7px;
 .screenshotContentImage {
   border-radius: $neu-radius;
   box-shadow: $neu-shadow $neu-shadow $neu-shadow-blur var(--color-neu-shadow-dark),
-    $neu-highlight $neu-highlight $neu-shadow-blur #ffffff;
+    $neu-highlight $neu-highlight $neu-shadow-blur var(--color-neu-shadow-light);
 
   margin-right: 2em;
   margin-left: 2em;

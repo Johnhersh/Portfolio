@@ -14,12 +14,14 @@ const lightTheme: any = {
   "--color-neu-shadow-light": "#ffffff",
 };
 const darkTheme: any = {
-  "--color-bg-dark": "#26252a",
-  "--color-bg-light": "#545259",
-  "--color-txt": "#ffffff",
+  "--color-bg-dark": "#212226",
+  "--color-bg-light": "#34393f",
+  "--color-txt": "#d7d8dc",
   "--color-topbar": "#000000",
   "--color-link": "#4ab9f0",
   "--color-link-visited": "#f04fe8",
+  "--color-neu-shadow-dark": "#1e2126",
+  "--color-neu-shadow-light": "#494a4f",
 };
 
 const applyTheme = (nextTheme: string) => {
