@@ -12,22 +12,15 @@ $responsive-width: 1515px; // This gets imported from the item-specific scss fil
 }
 
 .backgroundGradientContainer {
-  min-height: 100%;
-  position: relative;
-  overflow: hidden;
-
-  &::before {
-    background: linear-gradient(145deg, var(--color-bg-light), var(--color-bg-dark));
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-size: cover;
-    content: "";
-    height: 100%;
-    left: 0;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    will-change: transform;
-    z-index: -1;
-  }
+  background: linear-gradient(145deg, var(--color-bg-light), var(--color-bg-dark));
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  position: fixed;
+  top: 0;
+  will-change: transform;
+  z-index: -1;
 }
