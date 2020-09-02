@@ -22,7 +22,7 @@ const PortfolioItem: FunctionComponent<Props> = ({
 }) => {
   return (
     <div className={"portfolioItemContainer"}>
-      <Fade left>
+      <Fade left cascade duration={700}>
         <div className={"descriptionContainer"}>
           <h1>{title}</h1>
           <p>{description}</p>
