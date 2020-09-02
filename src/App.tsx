@@ -6,7 +6,8 @@ import HomePage from "./pages/homepage.component";
 const lightTheme: any = {
   "--color-bg-dark": "#e9eaef",
   "--color-bg-light": "#fbfcff",
-  "--color-txt": "#3f4253",
+  "--color-txt": "#595d72",
+  "--color-txt-heading": "#3f4253",
   "--color-topbar": "#ffffff",
   "--color-link": "#0d66be",
   "--color-link-visited": "#b613ae",
@@ -16,12 +17,13 @@ const lightTheme: any = {
 const darkTheme: any = {
   "--color-bg-dark": "#212226",
   "--color-bg-light": "#34393f",
+  "--color-txt-heading": "#c3c4c9",
   "--color-txt": "#d7d8dc",
   "--color-topbar": "#000000",
   "--color-link": "#4ab9f0",
   "--color-link-visited": "#f04fe8",
   "--color-neu-shadow-dark": "#1e2126",
-  "--color-neu-shadow-light": "#494a4f",
+  "--color-neu-shadow-light": "#404045",
 };
 
 const applyTheme = (nextTheme: string) => {

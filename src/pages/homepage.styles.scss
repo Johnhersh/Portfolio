@@ -7,9 +7,9 @@ $responsive-width: 1650px; // This gets imported from the item-specific scss fil
   width: 100%;
 }
 
-.darkModeText {
-  color: white;
-}
+// .darkModeText {
+//   color: white;
+// }
 
 .backgroundGradientContainer {
   background: linear-gradient(145deg, var(--color-bg-light), var(--color-bg-dark));

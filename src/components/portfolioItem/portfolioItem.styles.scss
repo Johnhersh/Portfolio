@@ -4,6 +4,7 @@
   display: flex;
   flex-direction: row;
   justify-content: center;
+  align-items: center;
   min-height: 40em;
   margin-top: 1em;
   width: 90%;
@@ -13,7 +14,7 @@
     flex-direction: column-reverse;
   }
 
-  border-radius: 16px;
+  border-radius: 30px;
   background: linear-gradient(145deg, var(--color-bg-dark), var(--color-bg-light));
   box-shadow: inset 2px 2px 4px var(--color-neu-shadow-dark),
     inset -2px -2px 4px var(--color-neu-shadow-light);
@@ -25,13 +26,34 @@
   display: flex;
   flex-direction: column;
   flex: 0;
-  padding-left: 3em;
+  padding-left: 2em;
   padding-top: 0.5em;
+  padding-bottom: 2em;
+  padding-right: 2em;
   margin-bottom: 2em;
+  margin-left: 2em;
+  margin-top: 2em;
   width: 400px;
   min-width: 400px;
   line-height: 1.6;
   color: var(--color-txt);
+
+  h1 {
+    color: var(--color-txt-heading);
+  }
+
+  // border-style: solid;
+  // border-color: var(--color-neu-shadow-dark);
+  // border-top-color: var(--color-neu-shadow-dark);
+  // border-left-color: var(--color-neu-shadow-dark);
+  // border-bottom-color: var(--color-bg-light);
+  // border-right-color: var(--color-bg-light);
+  // border-width: 1px;
+
+  border-radius: 30px;
+  background: linear-gradient(145deg, var(--color-bg-dark), var(--color-bg-light));
+  box-shadow: 12px 12px 20px var(--color-bg-dark), -12px -12px 20px var(--color-neu-shadow-light);
+
   @media screen and (max-width: $responsive-width) {
     flex: 1;
     min-width: auto;
