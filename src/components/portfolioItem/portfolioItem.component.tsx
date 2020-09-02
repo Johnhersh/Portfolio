@@ -1,5 +1,5 @@
 import React, { FunctionComponent } from "react";
-import Fade from "react-reveal/Fade.js";
+import { Fade } from "react-awesome-reveal";
 
 import "./portfolioItem.styles.scss";
 import "./individualContent.styles.scss";
@@ -22,7 +22,7 @@ const PortfolioItem: FunctionComponent<Props> = ({
 }) => {
   return (
     <div className={"portfolioItemContainer"}>
-      <Fade left cascade duration={700}>
+      <Fade duration={1500}>
         <div className={"descriptionContainer"}>
           <h1>{title}</h1>
           <p>{description}</p>
@@ -42,9 +42,10 @@ const PortfolioItem: FunctionComponent<Props> = ({
           </a>
         </div>
       </Fade>
-      <Fade>
-        <div className="portfolioChildrenContainer">{children}</div>
-      </Fade>
+      <div style={{ flex: 1 }} />
+      <div className="portfolioChildrenContainer">
+        <Fade>{children}</Fade>
+      </div>
     </div>
   );
 };
