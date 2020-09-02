@@ -27,6 +27,7 @@ function HomePage(props: any) {
 
   return (
     <div className="homepageContainer">
+      <div className="backgroundGradientContainer" />
       <TopBar size={topBarSize} changeTheme={props.changeTheme} />
       <main style={{ marginTop: topBarSize, flex: 1 }}>
         <PortfolioItem
