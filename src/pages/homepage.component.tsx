@@ -29,7 +29,7 @@ function HomePage(props: any) {
     <div className="homepageContainer">
       <div className="backgroundGradientContainer" />
       <TopBar size={topBarSize} changeTheme={props.changeTheme} />
-      <main style={{ marginTop: topBarSize, flex: 1 }}>
+      <main id="portfolioItemsContainer" style={{ marginTop: topBarSize }}>
         <PortfolioItem
           title={"Solar System Visualizer"}
           description={

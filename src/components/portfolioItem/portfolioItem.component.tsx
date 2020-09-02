@@ -42,7 +42,6 @@ const PortfolioItem: FunctionComponent<Props> = ({
           </a>
         </div>
       </Fade>
-      <div style={{ flex: 1 }} />
       <div className="portfolioChildrenContainer">
         <Fade>{children}</Fade>
       </div>
