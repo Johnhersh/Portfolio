@@ -94,6 +94,7 @@ export const reduxSVG = (
     height="80"
     viewBox="0 0 312.000000 244.000000"
     preserveAspectRatio="xMidYMid meet"
+    key="reduxIcon"
   >
     <g
       transform="translate(0.000000,244.000000) scale(0.100000,-0.100000)"
@@ -255,6 +256,7 @@ export const bootStrapSVG = (
     width="72"
     height="72"
     viewBox="0 0 48 48"
+    key="bootstrapIcon"
   >
     <g className="bootStrap_path">
       <path
@@ -278,6 +280,7 @@ export const postgresSVG = (
     height="48"
     viewBox="-2 0 48 48"
     className="postgresContainer"
+    key="postgresIcon"
   >
     <path
       className="postgresOutline"
