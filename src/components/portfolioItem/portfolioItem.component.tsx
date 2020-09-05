@@ -22,26 +22,33 @@ const PortfolioItem: FunctionComponent<Props> = ({
 }) => {
   return (
     <div className={"portfolioItemContainer"}>
-      <Fade duration={1500} fraction={0.25} childClassName={"descriptionContainer"}>
-        <div>
-          <h1>{title}</h1>
-          <p>{description}</p>
-          <h2>Tech used</h2>
-          <div className="iconsContainer">{icons}</div>
-          {liveLink != null && (
-            <div>
-              <h2>Link to live version</h2>
-              <a href={liveLink.link} target="_blank" rel="noopener noreferrer">
-                {liveLink.title}
-              </a>
-            </div>
-          )}
-          <h2>Github Link</h2>
-          <a href={githubLink} target="_blank" rel="noopener noreferrer">
-            Github Link
-          </a>
-        </div>
-      </Fade>
+      <div className="descriptionContainer">
+        <Fade damping={0.15} cascade fraction={0.1}>
+          <div>
+            <h1>{title}</h1>
+            <p>{description}</p>
+          </div>
+
+          <div>
+            <h2>Tech used</h2>
+            <div className="iconsContainer">{icons}</div>
+            {liveLink != null && (
+              <div>
+                <h2>Link to live version</h2>
+                <a href={liveLink.link} target="_blank" rel="noopener noreferrer">
+                  {liveLink.title}
+                </a>
+              </div>
+            )}
+          </div>
+          <div>
+            <h2>Github Link</h2>
+            <a href={githubLink} target="_blank" rel="noopener noreferrer">
+              Github Link
+            </a>
+          </div>
+        </Fade>
+      </div>
       <div className="portfolioChildrenContainer">
         <Fade>{children}</Fade>
       </div>
