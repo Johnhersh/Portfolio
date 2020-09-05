@@ -41,7 +41,10 @@ $neu-highlight: -7px;
   width: 100%;
   height: auto;
 
-  border-radius: 25px;
+  border-radius: $neu-radius;
+  box-shadow: $neu-shadow $neu-shadow $neu-shadow-blur var(--color-neu-shadow-dark),
+    $neu-highlight $neu-highlight $neu-shadow-blur var(--color-neu-shadow-light);
+
   overflow: hidden;
   z-index: 1; // To make sure the rounded corners hide the video once it starts playing
 

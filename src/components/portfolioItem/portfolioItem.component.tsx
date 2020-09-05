@@ -22,8 +22,8 @@ const PortfolioItem: FunctionComponent<Props> = ({
 }) => {
   return (
     <div className={"portfolioItemContainer"}>
-      <Fade duration={1500}>
-        <div className={"descriptionContainer"}>
+      <Fade duration={1500} fraction={0.25} childClassName={"descriptionContainer"}>
+        <div>
           <h1>{title}</h1>
           <p>{description}</p>
           <h2>Tech used</h2>
