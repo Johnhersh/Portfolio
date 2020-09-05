@@ -1,0 +1,25 @@
+.galleryImagesContainer {
+  display: flex;
+}
+
+.galleryChild {
+  opacity: 0;
+  transition: opacity 0.5s;
+
+  &#visible {
+    width: 100%;
+    margin-left: 0;
+    opacity: 1;
+  }
+
+  &#hidden {
+    position: fixed;
+    opacity: 0;
+  }
+}
+
+.galleryContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
