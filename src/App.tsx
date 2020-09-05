@@ -4,7 +4,7 @@ import "./App.css";
 import HomePage from "./pages/homepage.component";
 
 const lightTheme: any = {
-  "--color-bg-dark": "#e9eaef",
+  "--color-bg-dark": "#d2d3d8",
   "--color-bg-light": "#fbfcff",
   "--color-txt": "#595d72",
   "--color-txt-heading": "#3f4253",
