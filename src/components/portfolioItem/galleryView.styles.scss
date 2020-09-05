@@ -14,7 +14,7 @@
   }
 
   &#hidden {
-    position: fixed;
+    position: fixed; // To take it out of document flow
     opacity: 0;
     transform: scale(1.05);
   }
