@@ -1,5 +1,16 @@
+.galleryContainer {
+  display: flex;
+  flex-direction: column; // To get the dots on the bottom of the gallery view
+}
+
 .galleryImagesContainer {
   display: flex;
+}
+
+.galleryView {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 
 .galleryChild {
@@ -20,8 +31,20 @@
   }
 }
 
-.galleryContainer {
+.dotsContainer {
   display: flex;
   flex-direction: row;
-  align-items: center;
+  justify-content: center;
+}
+
+.activityDot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: black;
+  margin: 1em;
+
+  &#active {
+    background-color: white;
+  }
 }

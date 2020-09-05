@@ -23,19 +23,28 @@ const GalleryView: FunctionComponent<Props> = ({ children }) => {
 
   return (
     <div className={"galleryContainer"}>
-      <NextPrevButton type={"previousButton"} clickFunction={handlePrevious} />
-      <div className="galleryImagesContainer">
-        {React.Children.map(children || null, (child, i) => {
-          const id = activeItem === i ? "visible" : "hidden"; // Set appropriate ID to whichever item is active
+      <div className={"galleryView"}>
+        <NextPrevButton type={"previousButton"} clickFunction={handlePrevious} />
+        <div className="galleryImagesContainer">
+          {React.Children.map(children || null, (child, i) => {
+            const id = activeItem === i ? "visible" : "hidden"; // Set appropriate ID to whichever item is active
 
-          return (
-            <div id={id} className={"galleryChild"}>
-              {child}
-            </div>
-          );
+            return (
+              <div id={id} className={"galleryChild"}>
+                {child}
+              </div>
+            );
+          })}
+        </div>
+        <NextPrevButton type={"nextButton"} clickFunction={handleNext} />
+      </div>
+      <div className="dotsContainer">
+        {React.Children.map(children || null, (child, i) => {
+          const id = activeItem === i ? "active" : "inactive"; // Set appropriate ID to whichever item is active
+
+          return <div id={id} className={"activityDot"} />;
         })}
       </div>
-      <NextPrevButton type={"nextButton"} clickFunction={handleNext} />
     </div>
   );
 };
