@@ -39,7 +39,7 @@ const GalleryView: FunctionComponent<Props> = ({ children }) => {
         <NextPrevButton type={"nextButton"} clickFunction={handleNext} />
       </div>
       <div className="dotsContainer">
-        {React.Children.map(children || null, (child, i) => {
+        {React.Children.map(children || null, (_child, i) => {
           const id = activeItem === i ? "active" : "inactive"; // Set appropriate ID to whichever item is active
 
           return <div id={id} className={"activityDot"} />;
