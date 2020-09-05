@@ -4,17 +4,19 @@
 
 .galleryChild {
   opacity: 0;
-  transition: opacity 0.5s;
+  transition: opacity 0.25s, transform 0.5s;
 
   &#visible {
     width: 100%;
     margin-left: 0;
     opacity: 1;
+    transform: scale(1);
   }
 
   &#hidden {
     position: fixed;
     opacity: 0;
+    transform: scale(1.05);
   }
 }
 
