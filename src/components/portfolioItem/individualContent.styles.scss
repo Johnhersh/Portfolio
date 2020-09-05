@@ -22,11 +22,12 @@ $neu-highlight: -7px;
   box-shadow: $neu-shadow $neu-shadow $neu-shadow-blur var(--color-neu-shadow-dark),
     $neu-highlight $neu-highlight $neu-shadow-blur var(--color-neu-shadow-light);
 
-  margin-right: 2em;
   margin-left: 2em;
 
   @media screen and (max-width: $responsive-width) {
     max-width: 80%;
+    margin-left: 2em;
+    margin-right: 2em;
   }
 }
 
