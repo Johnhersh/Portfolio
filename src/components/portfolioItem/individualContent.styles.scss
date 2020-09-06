@@ -12,23 +12,28 @@ $neu-highlight: -12px;
   justify-content: center;
 
   @media screen and (max-width: $responsive-width) {
-    justify-content: center;
     margin-top: 2em;
   }
 }
 
 .screenshotWrapper {
-  margin-left: 2em;
-  margin-right: 2em;
+  display: flex;
+  justify-content: center;
+  margin-left: 1em;
+  margin-right: 1em;
 
-  &.wide {
-    max-width: 100%;
-    height: auto;
-  }
+  max-width: 100%;
+  height: auto;
+
+  // &.wide {
+  //   max-width: 100%;
+  //   height: auto;
+  // }
 
   &.vertical {
     max-height: 100%;
     width: auto;
+    flex: 1;
   }
 }
 
@@ -43,19 +48,22 @@ $neu-highlight: -12px;
     $neu-highlight $neu-highlight $neu-shadow-blur var(--color-neu-shadow-light);
 
   @media screen and (max-width: $responsive-width) {
-    max-width: 80%;
+    // max-width: 80%;
     // margin-left: 2em;
     // margin-right: 2em;
   }
 }
 
 .vimeoVideo {
-  flex: 0;
+  flex: 1;
 
-  max-height: 750px;
-  min-height: 450px;
-  max-width: 450px;
-  min-width: 350px;
+  // max-height: 80%;
+  // width: auto;
+
+  // max-height: 750px;
+  // min-height: 450px;
+  // max-width: 450px;
+  // min-width: 350px;
 
   width: 100%;
   height: auto;
@@ -67,15 +75,15 @@ $neu-highlight: -12px;
   overflow: hidden;
   z-index: 1; // To make sure the rounded corners hide the video once it starts playing
 
-  background-color: darkseagreen;
+  // background-color: darkseagreen;
 
   margin-top: 2em;
   margin-bottom: 2em;
 
   @media screen and (max-width: $responsive-width) {
-    flex: 1;
+    // flex: 1;
 
-    height: auto;
-    width: 348px;
+    // height: auto;
+    // width: 348px;
   }
 }

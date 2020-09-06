@@ -6,6 +6,7 @@ import ScreenshotFirepointe from "../../../Assets/Images_Neu/Firepointe_Phone.pn
 function FirePointe() {
   return (
     <div className="screenshotsContainer">
+      <div style={{ flex: 0.5 }} />
       <div className="screenshotWrapper vertical">
         <Vimeo
           video="375836140"
@@ -24,6 +25,7 @@ function FirePointe() {
       <div className="screenshotWrapper vertical">
         <img src={ScreenshotFirepointe} className="screenshotContentImage" alt="screenshot" />
       </div>
+      <div style={{ flex: 0.5 }} />
     </div>
   );
 }

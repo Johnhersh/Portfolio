@@ -6,6 +6,7 @@ import ScreenshotCurrency from "../../../Assets/Images_Neu/Currency_Phone.png";
 function CurrencyCalc() {
   return (
     <div className="screenshotsContainer">
+      <div style={{ flex: 0.5 }} />
       <div className="screenshotWrapper vertical">
         <Vimeo
           video="447021693"
@@ -24,6 +25,7 @@ function CurrencyCalc() {
       <div className="screenshotWrapper vertical">
         <img src={ScreenshotCurrency} className="screenshotContentImage" alt="screenshot" />
       </div>
+      <div style={{ flex: 0.5 }} />
     </div>
   );
 }
