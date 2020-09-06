@@ -50,7 +50,7 @@ const PortfolioItem: FunctionComponent<Props> = ({
         </Fade>
       </div>
       <div className="portfolioChildrenContainer">
-        <Fade>{children}</Fade>
+        <Fade className="portfolioChildrenContainer">{children}</Fade>
       </div>
     </div>
   );
