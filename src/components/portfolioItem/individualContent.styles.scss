@@ -4,7 +4,7 @@ $neu-shadow: 12px;
 $neu-shadow-blur: 20px;
 $neu-highlight: -12px;
 
-.screenshotImageContainer {
+.screenshotsContainer {
   flex: 1;
   display: flex;
   flex-direction: row;
@@ -17,8 +17,24 @@ $neu-highlight: -12px;
   }
 }
 
+.screenshotWrapper {
+  margin-left: 2em;
+  margin-right: 2em;
+
+  &.wide {
+    max-width: 100%;
+    height: auto;
+  }
+
+  &.vertical {
+    max-height: 100%;
+    width: auto;
+  }
+}
+
 .screenshotContentImage {
   overflow: hidden;
+  height: auto;
   line-height: 0; // Prevents padding in videos
   transform: translate3d(0, 0, 0); // Fixes overflow:hidden on Safari
   max-width: 100%;
@@ -26,12 +42,10 @@ $neu-highlight: -12px;
   box-shadow: $neu-shadow $neu-shadow $neu-shadow-blur var(--color-neu-shadow-dark),
     $neu-highlight $neu-highlight $neu-shadow-blur var(--color-neu-shadow-light);
 
-  margin-left: 2em;
-
   @media screen and (max-width: $responsive-width) {
     max-width: 80%;
-    margin-left: 2em;
-    margin-right: 2em;
+    // margin-left: 2em;
+    // margin-right: 2em;
   }
 }
 

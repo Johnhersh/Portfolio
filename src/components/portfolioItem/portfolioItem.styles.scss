@@ -89,6 +89,17 @@
   }
 }
 
+.portfolioChildrenContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+
+  @media screen and (max-width: $responsive-width) {
+    height: auto;
+  }
+}
+
 .iconsContainer {
   display: flex;
   align-items: row;
@@ -181,16 +192,5 @@
     &.postgresContainer {
       padding: 0 5px;
     }
-  }
-}
-
-.portfolioChildrenContainer {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex: 1;
-
-  @media screen and (max-width: $responsive-width) {
-    height: auto;
   }
 }
