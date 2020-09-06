@@ -11,12 +11,10 @@ export default function SpaceView() {
       <img src={screenshotSpaceView} className="screenshotContentImage" alt="screenshot" />
       <div className="screenshotContentImage">
         <video
-          width="700"
-          height="407"
+          width="1000px"
           autoPlay
-          // className="screenshotContentImage"
           loop
-          style={{ marginBottom: "-1px" }}
+          style={{ marginBottom: "-1px", width: "100%", height: "auto" }}
         >
           <source src={videoSpaceViewEarth} />
         </video>

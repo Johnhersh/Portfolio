@@ -27,6 +27,7 @@
   }
 
   &#hidden {
+    width: 0; // Fixes some flickering
     position: fixed; // To take it out of document flow
     opacity: 0;
     transform: scale(1.05);
