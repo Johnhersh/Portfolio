@@ -19,16 +19,12 @@ $neu-highlight: -12px;
 .screenshotWrapper {
   display: flex;
   justify-content: center;
+  align-items: center; // Needed for image responsiveness in Safari
   margin-left: 1em;
   margin-right: 1em;
 
   max-width: 100%;
   height: auto;
-
-  // &.wide {
-  //   max-width: 100%;
-  //   height: auto;
-  // }
 
   &.vertical {
     max-height: 100%;
@@ -46,24 +42,10 @@ $neu-highlight: -12px;
   border-radius: $neu-radius;
   box-shadow: $neu-shadow $neu-shadow $neu-shadow-blur var(--color-neu-shadow-dark),
     $neu-highlight $neu-highlight $neu-shadow-blur var(--color-neu-shadow-light);
-
-  @media screen and (max-width: $responsive-width) {
-    // max-width: 80%;
-    // margin-left: 2em;
-    // margin-right: 2em;
-  }
 }
 
 .vimeoVideo {
   flex: 1;
-
-  // max-height: 80%;
-  // width: auto;
-
-  // max-height: 750px;
-  // min-height: 450px;
-  // max-width: 450px;
-  // min-width: 350px;
 
   width: 100%;
   height: auto;
@@ -75,15 +57,6 @@ $neu-highlight: -12px;
   overflow: hidden;
   z-index: 1; // To make sure the rounded corners hide the video once it starts playing
 
-  // background-color: darkseagreen;
-
   margin-top: 2em;
   margin-bottom: 2em;
-
-  @media screen and (max-width: $responsive-width) {
-    // flex: 1;
-
-    // height: auto;
-    // width: 348px;
-  }
 }
