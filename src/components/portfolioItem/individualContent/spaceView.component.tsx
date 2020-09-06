@@ -9,9 +9,18 @@ export default function SpaceView() {
   return (
     <GalleryView>
       <img src={screenshotSpaceView} className="screenshotContentImage" alt="screenshot" />
-      <video width="700" height="407" autoPlay className="screenshotContentImage">
-        <source src={videoSpaceViewEarth} />
-      </video>
+      <div className="screenshotContentImage">
+        <video
+          width="700"
+          height="407"
+          autoPlay
+          // className="screenshotContentImage"
+          loop
+          style={{ marginBottom: "-1px" }}
+        >
+          <source src={videoSpaceViewEarth} />
+        </video>
+      </div>
       <img src={screenshotSpaceView2} className="screenshotContentImage" alt="screenshot" />
     </GalleryView>
   );

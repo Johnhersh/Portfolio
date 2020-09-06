@@ -18,6 +18,9 @@ $neu-highlight: -12px;
 }
 
 .screenshotContentImage {
+  overflow: hidden;
+  line-height: 0; // Prevents padding in videos
+  transform: translate3d(0, 0, 0); // Fixes overflow:hidden on Safari
   border-radius: $neu-radius;
   box-shadow: $neu-shadow $neu-shadow $neu-shadow-blur var(--color-neu-shadow-dark),
     $neu-highlight $neu-highlight $neu-shadow-blur var(--color-neu-shadow-light);
