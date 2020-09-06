@@ -15,6 +15,7 @@
   justify-content: center;
   border-style: hidden;
   color: var(--color-text);
+  z-index: 100; // Ensures buttons are clickable if hidden content is large and otherwise covers them
 
   height: 5em;
   width: 5em;
