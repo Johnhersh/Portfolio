@@ -10,8 +10,8 @@ interface NextPrevButtonProps {
 const NextPrevButton: FunctionComponent<NextPrevButtonProps> = ({ type, clickFunction }) => {
   return (
     <button className="nextPrevButton" type={"button"} id={type} onClick={clickFunction}>
-      {type === "nextButton" && <FaChevronRight />}
-      {type === "previousButton" && <FaChevronLeft />}
+      {type === "nextButton" && <FaChevronRight className="chevron" />}
+      {type === "previousButton" && <FaChevronLeft className="chevron" />}
     </button>
   );
 };

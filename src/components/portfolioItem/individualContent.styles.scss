@@ -1,5 +1,6 @@
 @import "../../pages/homepage.styles";
 $neu-radius: 32px;
+$neu-radius-responsive: 10px;
 $neu-shadow: 12px;
 $neu-shadow-blur: 20px;
 $neu-highlight: -12px;
@@ -12,7 +13,9 @@ $neu-highlight: -12px;
   justify-content: center;
 
   @media screen and (max-width: $responsive-width) {
-    margin-top: 2em;
+    margin-top: 1em;
+    margin-left: 0.5em;
+    margin-right: 0.5em;
   }
 }
 
@@ -42,6 +45,10 @@ $neu-highlight: -12px;
   border-radius: $neu-radius;
   box-shadow: $neu-shadow $neu-shadow $neu-shadow-blur var(--color-neu-shadow-dark),
     $neu-highlight $neu-highlight $neu-shadow-blur var(--color-neu-shadow-light);
+
+  @media screen and (max-width: $responsive-width) {
+    border-radius: $neu-radius-responsive;
+  }
 }
 
 .vimeoVideo {
@@ -59,4 +66,8 @@ $neu-highlight: -12px;
 
   margin-top: 2em;
   margin-bottom: 2em;
+
+  @media screen and (max-width: $responsive-width) {
+    border-radius: $neu-radius-responsive;
+  }
 }

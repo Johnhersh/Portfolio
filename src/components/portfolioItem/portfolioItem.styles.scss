@@ -61,7 +61,8 @@
     width: auto;
     max-width: 600px;
     padding: 0.5rem 2rem;
-    margin-right: 2em;
+    margin-right: 1em;
+    margin-left: 1em;
   }
 
   a {
@@ -99,8 +100,8 @@
   @media screen and (max-width: $responsive-width) {
     height: auto;
     width: 100%;
-    padding-left: 1em;
-    padding-right: 1em;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
   }
 }
 
