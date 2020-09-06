@@ -12,6 +12,7 @@
   @media screen and (max-width: $responsive-width) {
     flex-direction: column;
     flex-direction: column-reverse;
+    width: 96%;
   }
 
   border-radius: 30px;
@@ -97,7 +98,9 @@
 
   @media screen and (max-width: $responsive-width) {
     height: auto;
-    width: 80%;
+    width: 100%;
+    padding-left: 1em;
+    padding-right: 1em;
   }
 }
 

@@ -14,6 +14,7 @@ export default function SpaceView() {
           width="1000px"
           autoPlay
           loop
+          playsInline // For ios
           style={{ marginBottom: "-1px", width: "100%", height: "auto" }}
         >
           <source src={videoSpaceViewEarth} />
