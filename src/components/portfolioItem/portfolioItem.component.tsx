@@ -1,8 +1,21 @@
 import React, { FunctionComponent } from "react";
 import { Fade } from "react-awesome-reveal";
+import { keyframes } from "@emotion/core";
+import Reveal from "react-awesome-reveal";
 
 import "./portfolioItem.styles.scss";
 import "./individualContent.styles.scss";
+
+const customAnimation = keyframes`
+  from {
+    opacity: 0;
+    transform: translate3d(-20px, 0, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+`;
 
 interface Props {
   title: string;
@@ -23,7 +36,7 @@ const PortfolioItem: FunctionComponent<Props> = ({
   return (
     <div className={"portfolioItemContainer"}>
       <div className="descriptionContainer">
-        <Fade damping={0.15} cascade fraction={0.1}>
+        <Reveal keyframes={customAnimation} cascade damping={0.2} duration={1500}>
           <div>
             <h1>{title}</h1>
             <p>{description}</p>
@@ -47,7 +60,7 @@ const PortfolioItem: FunctionComponent<Props> = ({
               Github Link
             </a>
           </div>
-        </Fade>
+        </Reveal>
       </div>
       <div className="portfolioChildrenContainer">
         <Fade className="portfolioChildrenContainer">{children}</Fade>
