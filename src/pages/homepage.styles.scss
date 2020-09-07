@@ -31,4 +31,8 @@ $responsive-width: 1366px; // This gets imported from the item-specific scss fil
   flex-direction: column;
   align-items: center;
   padding-bottom: 1em;
+
+  @media screen and (max-width: $responsive-width) {
+    margin-top: 0 !important;
+  }
 }
