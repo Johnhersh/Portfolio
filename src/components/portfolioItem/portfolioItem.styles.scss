@@ -53,8 +53,8 @@
 
   border-radius: 30px;
   background: linear-gradient(145deg, var(--color-bg-light), var(--color-bg-dark));
-  box-shadow: 12px 12px 20px var(--color-neu-shadow-dark),
-    -12px -12px 20px var(--color-neu-shadow-light);
+  box-shadow: 12px 12px 24px var(--color-neu-shadow-dark),
+    -12px -12px 24px var(--color-neu-shadow-light);
 
   @media screen and (max-width: $responsive-width) {
     flex: 1;

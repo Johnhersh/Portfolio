@@ -5,14 +5,14 @@ import HomePage from "./pages/homepage.component";
 
 const lightTheme: any = {
   "--color-bg-dark": "#d2d3d8",
-  "--color-bg-light": "#fbfcff",
+  "--color-bg-light": "#e9eaef",
   "--color-txt": "#595d72",
   "--color-txt-heading": "#3f4253",
   "--color-topbar": "#ffffff",
   "--color-link": "#0d66be",
   "--color-link-visited": "#b613ae",
   "--color-neu-shadow-dark": "#aeaeb6",
-  "--color-neu-shadow-light": "#ffffff",
+  "--color-neu-shadow-light": "#f2f4f5",
 };
 const darkTheme: any = {
   "--color-bg-dark": "#212226",
