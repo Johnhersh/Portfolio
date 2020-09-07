@@ -33,6 +33,6 @@ $responsive-width: 1366px; // This gets imported from the item-specific scss fil
   padding-bottom: 1em;
 
   @media screen and (max-width: $responsive-width) {
-    margin-top: 0 !important;
+    margin-top: 0 !important; // !important overrides the built-in value in the TopBar component
   }
 }
