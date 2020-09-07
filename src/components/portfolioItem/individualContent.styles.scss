@@ -33,6 +33,7 @@ $neu-highlight: -12px;
     max-height: 100%;
     width: auto;
     flex: 1;
+    max-width: 300px; // So that phone-sized images don't scale larger than neighboring elements when page is extra-wide
   }
 }
 
