@@ -1,4 +1,4 @@
-@import "../../pages/homepage.styles";
+@import "../../pages/homepage.styles.scss";
 
 #nextButton {
   margin-right: 4em;
@@ -50,4 +50,8 @@
     height: 5em;
     width: 3em;
   }
+}
+
+.chevron {
+  color: red;
 }
