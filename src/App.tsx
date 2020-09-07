@@ -11,7 +11,7 @@ const lightTheme: any = {
   "--color-topbar": "#ffffff",
   "--color-link": "#0d66be",
   "--color-link-visited": "#b613ae",
-  "--color-neu-shadow-dark": "#d7d7df",
+  "--color-neu-shadow-dark": "#aeaeb6",
   "--color-neu-shadow-light": "#ffffff",
 };
 const darkTheme: any = {
