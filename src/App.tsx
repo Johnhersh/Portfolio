@@ -23,7 +23,7 @@ const darkTheme: any = {
   "--color-link": "#4ab9f0",
   "--color-link-visited": "#f04fe8",
   "--color-neu-shadow-dark": "#1e2126",
-  "--color-neu-shadow-light": "#404045",
+  "--color-neu-shadow-light": "#3a3c44",
 };
 
 const applyTheme = (nextTheme: string) => {
