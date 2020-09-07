@@ -45,7 +45,7 @@ function TopBar(props: any) {
             }}
             checked={bIsChecked}
             onColor="#545259"
-            offColor="#000000"
+            offColor="#34393f"
             uncheckedIcon={false}
             checkedIcon={false}
           />
