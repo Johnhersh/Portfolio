@@ -23,7 +23,7 @@ import CurrencyCalc from "../components/portfolioItem/individualContent/currency
 import SpaceView from "../components/portfolioItem/individualContent/spaceView.component";
 
 function HomePage(props: any) {
-  const topBarSize = "125px";
+  const topBarSize = "110px";
 
   return (
     <div className="homepageContainer">
