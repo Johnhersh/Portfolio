@@ -12,10 +12,11 @@ export default function SpaceView() {
       <div className="screenshotContentImage">
         <video
           width="1000px"
+          className="screenshotContentImage"
           autoPlay
           loop
-          playsInline // For ios
-          style={{ marginBottom: "-1px", width: "100%", height: "auto" }}
+          playsInline // For ios to autoplay
+          style={{ marginBottom: "-10px", marginTop: "-10px", width: "1000px", height: "580px" }}
         >
           <source src={videoSpaceViewEarth} />
         </video>
