@@ -35,7 +35,7 @@ function HomePage(props: any) {
           description={
             "A web app for viewing the solar system in 3D. Done with three.js for the purpose of studying web visualization technologies."
           }
-          githubLink={"https://github.com/Johnhersh/SpaceView"}
+          githubLink={{ url: "https://github.com/Johnhersh/SpaceView", title: "Github Link" }}
           liveLink={{ link: "https://spaceview.johnher.com", title: "Solar System Visualizer" }}
           icons={[reactSVG, sassSVG, typescriptSVG, threejsSVG]}
         >
@@ -43,11 +43,29 @@ function HomePage(props: any) {
         </PortfolioItem>
 
         <PortfolioItem
+          title={"Chat System"}
+          description={
+            "A chat system done to study Node.js. Backend done with node and express, frontend with React. Using socket.io for the websocket chat, and Postgres for database."
+          }
+          githubLink={{ url: "https://github.com/Johnhersh/chat_server", title: "Github backend" }}
+          githubLinkExtra={{
+            url: "https://github.com/Johnhersh/chat_client",
+            title: "Github frontend",
+          }}
+          icons={[reactNativeSVG, dotnetSVG, postgresSVG, bootStrapSVG]}
+        >
+          <Chat />
+        </PortfolioItem>
+
+        <PortfolioItem
           title={"Currency Converter"}
           description={
             "A currency converter app done in React Native. Purpose of this project was to learn Redux, use multiple APIs, and React-Native animations."
           }
-          githubLink={"https://github.com/Johnhersh/CurrencyConverter"}
+          githubLink={{
+            url: "https://github.com/Johnhersh/CurrencyConverter",
+            title: "Github Link",
+          }}
           liveLink={{ link: "exp://exp.host/@johnhersh/currencyconverter", title: "Expo Link" }}
           icons={[reactNativeSVG, typescriptSVG, reduxSVG]}
         >
@@ -59,7 +77,7 @@ function HomePage(props: any) {
           description={
             "Made this project to learn more about algorithms and how they work. By trying to visualize common algorithms, I set out to understand them better."
           }
-          githubLink={"https://github.com/Johnhersh/AlgoVis"}
+          githubLink={{ url: "https://github.com/Johnhersh/AlgoVis", title: "Github Link" }}
           liveLink={{ link: "https://algovis.johnher.com", title: "Algorithm Visualizer" }}
           icons={[reactSVG, sassSVG, typescriptSVG]}
         >
@@ -69,7 +87,7 @@ function HomePage(props: any) {
         <PortfolioItem
           title={"Portfolio Site"}
           description={"This website. Done as a project to learn React and Sass."}
-          githubLink={"https://github.com/Johnhersh/Portfolio"}
+          githubLink={{ url: "https://github.com/Johnhersh/Portfolio", title: "Github Link" }}
           icons={[reactSVG, sassSVG, typescriptSVG]}
         >
           <PortfolioSite />
@@ -80,21 +98,10 @@ function HomePage(props: any) {
           description={
             "Firepointe is an app mockup done for a local church. It congregates their posts from various social media outlets like Youtube and Facebook and shows them in a feed. There is also a donation page allowing people to give directly from the app. The app was made in React Native, with the backend done in dotnet for the user management."
           }
-          githubLink={"https://github.com/Johnhersh/FirepointE"}
+          githubLink={{ url: "https://github.com/Johnhersh/FirepointE", title: "Github Link" }}
           icons={[reactNativeSVG, dotnetSVG]}
         >
           <FirePointe />
-        </PortfolioItem>
-
-        <PortfolioItem
-          title={"Chat System"}
-          description={
-            "A chat system done to study dotnet core. Backend done with dotnet, frontend with bootstrap. Using SignalR for the websocket chat, and Postgres for database. There is a companion phone app done with React Native that uses the same API."
-          }
-          githubLink={"https://github.com/Johnhersh/ChatApp"}
-          icons={[reactNativeSVG, dotnetSVG, postgresSVG, bootStrapSVG]}
-        >
-          <Chat />
         </PortfolioItem>
       </main>
     </div>

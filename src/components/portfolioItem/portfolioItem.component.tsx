@@ -22,7 +22,8 @@ interface Props {
   description: string;
   icons: Array<JSX.Element>;
   liveLink?: { link: string; title: string };
-  githubLink: string;
+  githubLink: { url: string; title: string };
+  githubLinkExtra?: { url: string; title: string };
 }
 
 const PortfolioItem: FunctionComponent<Props> = ({
@@ -31,6 +32,7 @@ const PortfolioItem: FunctionComponent<Props> = ({
   icons,
   liveLink,
   githubLink,
+  githubLinkExtra,
   children,
 }) => {
   return (
@@ -56,9 +58,16 @@ const PortfolioItem: FunctionComponent<Props> = ({
           </div>
           <div>
             <h2>Github Link</h2>
-            <a href={githubLink} target="_blank" rel="noopener noreferrer">
-              Github Link
+            <a href={githubLink.url} target="_blank" rel="noopener noreferrer">
+              {githubLink.title}
             </a>
+            {githubLinkExtra != null && (
+              <div>
+                <a href={githubLinkExtra.url} target="_blank" rel="noopener noreferrer">
+                  {githubLinkExtra.title}
+                </a>
+              </div>
+            )}
           </div>
         </Reveal>
       </div>
