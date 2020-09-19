@@ -1,11 +1,14 @@
 import React from "react";
 
+import GalleryView from "../galleryView.component";
 import ScreenshotChat from "../../../Assets/Images_Neu/Chat.png";
+import ScreenshotChat2 from "../../../Assets/Images_Neu/Chat2.png";
 
 export default function Chat() {
   return (
-    <div className="screenshotsContainer">
+    <GalleryView>
       <img src={ScreenshotChat} className="screenshotContentImage" alt="screenshot" />
-    </div>
+      <img src={ScreenshotChat2} className="screenshotContentImage" alt="screenshot" />
+    </GalleryView>
   );
 }
