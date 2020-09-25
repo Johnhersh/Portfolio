@@ -47,6 +47,7 @@ function HomePage(props: any) {
           description={
             "A chat system done to study Node.js. Backend done with node and express, frontend with React. Using socket.io for the websocket chat, and Postgres for database."
           }
+          liveLink={{ link: "https://chatapp.johnher.com", title: "Chat App" }}
           githubLink={{ url: "https://github.com/Johnhersh/chat_server", title: "Github backend" }}
           githubLinkExtra={{
             url: "https://github.com/Johnhersh/chat_client",
