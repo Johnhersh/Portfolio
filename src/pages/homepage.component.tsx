@@ -41,7 +41,7 @@ function HomePage(props: any) {
             url: "https://github.com/Johnhersh/chat_client",
             title: "Github frontend",
           }}
-          icons={[reactSVG, postgresSVG, bootStrapSVG, sassSVG]}
+          icons={[reactSVG, typescriptSVG, postgresSVG, bootStrapSVG, sassSVG]}
         >
           <Chat />
         </PortfolioItem>
