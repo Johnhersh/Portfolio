@@ -31,18 +31,6 @@ function HomePage(props: any) {
       <TopBar size={topBarSize} changeTheme={props.changeTheme} />
       <main id="portfolioItemsContainer" style={{ marginTop: topBarSize }}>
         <PortfolioItem
-          title={"Solar System Visualizer"}
-          description={
-            "A web app for viewing the solar system in 3D. Done with three.js for the purpose of studying web visualization technologies."
-          }
-          githubLink={{ url: "https://github.com/Johnhersh/SpaceView", title: "Github Link" }}
-          liveLink={{ link: "https://spaceview.johnher.com", title: "Solar System Visualizer" }}
-          icons={[reactSVG, sassSVG, typescriptSVG, threejsSVG]}
-        >
-          <SpaceView />
-        </PortfolioItem>
-
-        <PortfolioItem
           title={"Chat System"}
           description={
             "A chat system done to study Node.js. Backend done with node and express, frontend with React. Using socket.io for the websocket chat, and Postgres for database."
@@ -56,6 +44,18 @@ function HomePage(props: any) {
           icons={[reactSVG, postgresSVG, bootStrapSVG, sassSVG]}
         >
           <Chat />
+        </PortfolioItem>
+
+        <PortfolioItem
+          title={"Solar System Visualizer"}
+          description={
+            "A web app for viewing the solar system in 3D. Done with three.js for the purpose of studying web visualization technologies."
+          }
+          githubLink={{ url: "https://github.com/Johnhersh/SpaceView", title: "Github Link" }}
+          liveLink={{ link: "https://spaceview.johnher.com", title: "Solar System Visualizer" }}
+          icons={[reactSVG, sassSVG, typescriptSVG, threejsSVG]}
+        >
+          <SpaceView />
         </PortfolioItem>
 
         <PortfolioItem
