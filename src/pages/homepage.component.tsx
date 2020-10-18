@@ -41,8 +41,7 @@ function HomePage(props: any) {
             url: "https://github.com/Johnhersh/chat_client",
             title: "Github frontend",
           }}
-          icons={[reactSVG, typescriptSVG, postgresSVG, bootStrapSVG, sassSVG]}
-        >
+          icons={[reactSVG, typescriptSVG, postgresSVG, bootStrapSVG, sassSVG]}>
           <Chat />
         </PortfolioItem>
 
@@ -52,9 +51,8 @@ function HomePage(props: any) {
             "A web app for viewing the solar system in 3D. Done with three.js for the purpose of studying web visualization technologies."
           }
           githubLink={{ url: "https://github.com/Johnhersh/SpaceView", title: "Github Link" }}
-          liveLink={{ link: "https://spaceview.johnher.com", title: "Solar System Visualizer" }}
-          icons={[reactSVG, sassSVG, typescriptSVG, threejsSVG]}
-        >
+          liveLink={{ link: "https://space-view.johnher.com", title: "Solar System Visualizer" }}
+          icons={[reactSVG, sassSVG, typescriptSVG, threejsSVG]}>
           <SpaceView />
         </PortfolioItem>
 
@@ -68,8 +66,7 @@ function HomePage(props: any) {
             title: "Github Link",
           }}
           liveLink={{ link: "exp://exp.host/@johnhersh/currencyconverter", title: "Expo Link" }}
-          icons={[reactNativeSVG, typescriptSVG, reduxSVG]}
-        >
+          icons={[reactNativeSVG, typescriptSVG, reduxSVG]}>
           <CurrencyCalc />
         </PortfolioItem>
 
@@ -80,8 +77,7 @@ function HomePage(props: any) {
           }
           githubLink={{ url: "https://github.com/Johnhersh/AlgoVis", title: "Github Link" }}
           liveLink={{ link: "https://algovis.johnher.com", title: "Algorithm Visualizer" }}
-          icons={[reactSVG, sassSVG, typescriptSVG]}
-        >
+          icons={[reactSVG, sassSVG, typescriptSVG]}>
           <AlgoVis />
         </PortfolioItem>
 
@@ -89,8 +85,7 @@ function HomePage(props: any) {
           title={"Portfolio Site"}
           description={"This website. Done as a project to learn React and Sass."}
           githubLink={{ url: "https://github.com/Johnhersh/Portfolio", title: "Github Link" }}
-          icons={[reactSVG, sassSVG, typescriptSVG]}
-        >
+          icons={[reactSVG, sassSVG, typescriptSVG]}>
           <PortfolioSite />
         </PortfolioItem>
 
@@ -100,8 +95,7 @@ function HomePage(props: any) {
             "Firepointe is an app mockup done for a local church. It congregates their posts from various social media outlets like Youtube and Facebook and shows them in a feed. There is also a donation page allowing people to give directly from the app. The app was made in React Native, with the backend done in dotnet for the user management."
           }
           githubLink={{ url: "https://github.com/Johnhersh/FirepointE", title: "Github Link" }}
-          icons={[reactNativeSVG, dotnetSVG]}
-        >
+          icons={[reactNativeSVG, dotnetSVG]}>
           <FirePointe />
         </PortfolioItem>
       </main>
