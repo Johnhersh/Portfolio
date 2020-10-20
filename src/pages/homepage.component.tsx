@@ -52,7 +52,7 @@ function HomePage(props: any) {
           }
           githubLink={{ url: "https://github.com/Johnhersh/SpaceView", title: "Github Link" }}
           liveLink={{ link: "https://space-view.johnher.com", title: "Solar System Visualizer" }}
-          icons={[reactSVG, sassSVG, typescriptSVG, threejsSVG]}>
+          icons={[reactSVG, typescriptSVG, sassSVG, threejsSVG]}>
           <SpaceView />
         </PortfolioItem>
 
