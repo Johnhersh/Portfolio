@@ -9,10 +9,10 @@ import {
   typescriptSVG,
   dotnetSVG,
   reactNativeSVG,
-  bootStrapSVG,
   postgresSVG,
   reduxSVG,
   threejsSVG,
+  GraphQL_SVG,
 } from "./icons";
 
 import AlgoVis from "../components/portfolioItem/individualContent/algoVis.component";
@@ -41,7 +41,7 @@ function HomePage(props: any) {
             url: "https://github.com/Johnhersh/chat_client",
             title: "Github frontend",
           }}
-          icons={[reactSVG, typescriptSVG, postgresSVG, bootStrapSVG, sassSVG]}>
+          icons={[reactSVG, typescriptSVG, postgresSVG, sassSVG, GraphQL_SVG]}>
           <Chat />
         </PortfolioItem>
 
