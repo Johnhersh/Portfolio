@@ -16,11 +16,7 @@ function TopBar(props: any) {
         <div className="topbarLinks">
           <ul>
             <li>
-              <a
-                href="https://www.linkedin.com/in/john-hershberg/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
+              <a href="https://www.linkedin.com/in/john-hershberg/" target="_blank" rel="noopener noreferrer">
                 LinkedIn
               </a>
             </li>
@@ -29,11 +25,10 @@ function TopBar(props: any) {
             </li>
             <li>
               <a
-                href={process.env.PUBLIC_URL + "/Hershberg_John_resume_webdev.pdf"}
+                href={process.env.PUBLIC_URL + "/Hershberg_John_resume.pdf"}
                 download
                 target="_blank"
-                rel="noopener noreferrer"
-              >
+                rel="noopener noreferrer">
                 Resume
               </a>
             </li>
