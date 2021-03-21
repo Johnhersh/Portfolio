@@ -13,7 +13,7 @@ import {
   reduxSVG,
   threejsSVG,
   GraphQL_SVG,
-} from "./icons";
+} from "../icons";
 
 import AlgoVis from "../components/portfolioItem/individualContent/algoVis.component";
 import PortfolioSite from "../components/portfolioItem/individualContent/portfolioSite.component";
