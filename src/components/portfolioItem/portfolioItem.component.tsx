@@ -3,6 +3,8 @@ import { Fade } from "react-awesome-reveal";
 import { keyframes } from "@emotion/core";
 import Reveal from "react-awesome-reveal";
 
+import { externalLink } from "../../portfolioItems";
+
 import "./portfolioItem.styles.scss";
 import "./individualContent.styles.scss";
 
@@ -21,9 +23,9 @@ interface Props {
   title: string;
   description: string;
   icons: Array<JSX.Element>;
-  liveLink?: { link: string; title: string };
-  githubLink: { url: string; title: string };
-  githubLinkExtra?: { url: string; title: string };
+  liveLink?: externalLink;
+  githubLink: externalLink;
+  githubLinkExtra?: externalLink;
 }
 
 const PortfolioItem: FunctionComponent<Props> = ({
@@ -50,7 +52,7 @@ const PortfolioItem: FunctionComponent<Props> = ({
             {liveLink != null && (
               <div>
                 <h2>Link to live version</h2>
-                <a href={liveLink.link} target="_blank" rel="noopener noreferrer">
+                <a href={liveLink.url} target="_blank" rel="noopener noreferrer">
                   {liveLink.title}
                 </a>
               </div>
